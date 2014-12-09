@@ -1,0 +1,537 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3 {
+  display: block;
+  padding: 1vh 0; }
+
+#homeContainer {
+  background: url(http://localhost:8000/AlecRobins/Images/bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: 50% 20%;
+  position: absolute; }
+
+#homeMain {
+  position: absolute;
+  width: 66%;
+  left: 17.5%;
+  top: 20%; }
+  #homeMain h1 {
+    font-weight: 500;
+    color: white;
+    font-size: 4em; }
+  #homeMain h2 {
+    font-weight: 400;
+    color: white;
+    font-size: 2em; }
+  #homeMain h3 {
+    font-weight: 300;
+    color: white;
+    font-size: 1.5em; }
+
+#homeProfile {
+  display: table;
+  margin: 0 auto; }
+
+.projectContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 40px; }
+
+.projectMainImage {
+  height: 50vh;
+  width: 100%; }
+
+#trendingMainImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/TrendingSounds/main.jpg") center top;
+  background-size: cover; }
+
+.projectInfo {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  left: 10%; }
+  .projectInfo h1 {
+    padding: none !important; }
+
+.projectLink a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 10px 0px;
+  -webkit-transition: padding-right 0.2s ease;
+  -moz-transition: padding-right 0.2s ease;
+  -o-transition: padding-right 0.2s ease;
+  -ms-transition: padding-right 0.2s ease; }
+
+.projectLink a:hover {
+  padding-right: 50px;
+  color: white;
+  text-decoration: none; }
+
+.projectTech h2 {
+  color: #2d2d2d;
+  font-size: 20px; }
+
+#trendingSounds .projectLink a {
+  background-color: #0192ff;
+  border: 2px solid #0192ff; }
+
+#icon {
+  max-width: 2em; }
+
+.devicon-amazonwebservices-plain-wordmark.colored,
+.devicon-amazonwebservices-original.colored,
+.devicon-amazonwebservices-plain.colored {
+  color: #f7a80d; }
+
+.devicon-android-plain-wordmark.colored,
+.devicon-android-plain.colored {
+  color: #a4c439; }
+
+.devicon-angularjs-plain-wordmark.colored,
+.devicon-angularjs-plain.colored {
+  color: #c4473a; }
+
+.devicon-appcelerator-plain-wordmark.colored,
+.devicon-appcelerator-original.colored,
+.devicon-appcelerator-plain.colored {
+  color: #ac162c; }
+
+.devicon-apple-original.colored,
+.devicon-apple-plain.colored {
+  color: black; }
+
+.devicon-atom-original.colored,
+.devicon-atom-original-wordmark.colored,
+.devicon-atom-plain.colored,
+.devicon-atom-plain-wordmark.colored {
+  color: #67595d; }
+
+.devicon-backbonejs-plain.colored,
+.devicon-backbonejs-plain-wordmark.colored {
+  color: #002a41; }
+
+.devicon-bootstrap-plain-wordmark.colored,
+.devicon-bootstrap-plain.colored {
+  color: #59407f; }
+
+.devicon-bower-line-wordmark.colored,
+.devicon-bower-line.colored,
+.devicon-bower-plain-wordmark.colored,
+.devicon-bower-plain.colored {
+  color: #ef5734; }
+
+.devicon-chrome-plain-wordmark.colored,
+.devicon-chrome-plain.colored {
+  color: #ce4e4e; }
+
+.devicon-codeigniter-plain-wordmark.colored,
+.devicon-codeigniter-plain.colored {
+  color: #ee4323; }
+
+.devicon-css3-plain-wordmark.colored,
+.devicon-css3-plain.colored {
+  color: #3d8fc6; }
+
+.devicon-debian-plain-wordmark.colored,
+.devicon-debian-plain.colored {
+  color: #a80030; }
+
+.devicon-dot-net-plain-wordmark.colored,
+.devicon-dot-net-plain.colored {
+  color: #1384c8; }
+
+.devicon-drupal-plain-wordmark.colored,
+.devicon-drupal-plain.colored {
+  color: #0073ba; }
+
+.devicon-firefox-plain-wordmark.colored,
+.devicon-firefox-plain.colored {
+  color: #dd732a; }
+
+.devicon-foundation-plain-wordmark.colored,
+.devicon-foundation-plain.colored {
+  color: #008cba; }
+
+.devicon-git-plain-wordmark.colored,
+.devicon-git-plain.colored {
+  color: red; }
+
+.devicon-grunt-line-wordmark.colored,
+.devicon-grunt-line.colored,
+.devicon-grunt-plain-wordmark.colored,
+.devicon-grunt-plain.colored {
+  color: #fcaa1a; }
+
+.devicon-gulp-plain.colored {
+  color: #eb4a4b; }
+
+.devicon-html5-plain-wordmark.colored,
+.devicon-html5-plain.colored {
+  color: #e54d26; }
+
+.devicon-ie10-original.colored,
+.devicon-ie10-plain.colored {
+  color: #1ebbee; }
+
+.devicon-illustrator-line.colored,
+.devicon-illustrator-plain.colored {
+  color: #faa625; }
+
+.devicon-java-plain-wordmark.colored,
+.devicon-java-plain.colored {
+  color: #ea2d2e; }
+
+.devicon-javascript-plain.colored {
+  color: #f0db4f; }
+
+.devicon-jquery-plain-wordmark.colored,
+.devicon-jquery-plain.colored {
+  color: #0769ad; }
+
+.devicon-krakenjs-plain.colored,
+.devicon-krakenjs-plain-wordmark.colored {
+  color: #0081c2; }
+
+.devicon-laravel-plain-wordmark.colored,
+.devicon-laravel-plain.colored {
+  color: #fd4f31; }
+
+.devicon-less-plain-wordmark.colored {
+  color: #2a4d80; }
+
+.devicon-linux-plain.colored {
+  color: black; }
+
+.devicon-mongodb-plain.colored,
+.devicon-mongodb-plain-wordmark.colored {
+  color: #4faa41; }
+
+.devicon-moodle-plain.colored,
+.devicon-moodle-plain-wordmark.colored {
+  color: #f7931e; }
+
+.devicon-mysql-plain.colored,
+.devicon-mysql-plain-wordmark.colored {
+  color: #00618a; }
+
+.devicon-nodejs-plain.colored,
+.devicon-nodejs-plain-wordmark.colored {
+  color: #83cd29; }
+
+.devicon-oracle-original.colored,
+.devicon-oracle-plain.colored,
+.devicon-oracle-plain-wordmark.colored {
+  color: #ea1b22; }
+
+.devicon-photoshop-line.colored,
+.devicon-photoshop-plain.colored {
+  color: #80b5e2; }
+
+.devicon-php-plain.colored {
+  color: #6181b6; }
+
+.devicon-postgresql-plain.colored,
+.devicon-postgresql-plain-wordmark.colored {
+  color: #336791; }
+
+.devicon-python-plain-wordmark.colored,
+.devicon-python-plain.colored {
+  color: #ffd845; }
+
+.devicon-rails-plain-wordmark.colored,
+.devicon-rails-plain.colored {
+  color: #a62c46; }
+
+.devicon-ruby-plain-wordmark.colored,
+.devicon-ruby-plain.colored {
+  color: #d91404; }
+
+.devicon-ubuntu-plain-wordmark.colored,
+.devicon-ubuntu-plain.colored {
+  color: #dd4814; }
+
+.devicon-sass-original.colored,
+.devicon-sass-plain.colored,
+.devicon-sass-plain-wordmark.colored {
+  color: #cc6699; }
+
+.devicon-travis-plain-wordmark.colored,
+.devicon-travis-plain.colored {
+  color: #bb2031; }
+
+.devicon-trello-plain-wordmark.colored,
+.devicon-trello-plain.colored {
+  color: #23719f; }
+
+.devicon-ubuntu-plain-wordmark.colored,
+.devicon-ubuntu-plain.colored {
+  color: #dd4814; }
+
+.devicon-windows8-original-wordmark.colored,
+.devicon-windows8-original.colored,
+.devicon-windows8-plain-wordmark.colored,
+.devicon-windows8-plain.colored {
+  color: #00adef; }
+
+.devicon-wordpress-plain-wordmark.colored,
+.devicon-wordpress-plain.colored {
+  color: #494949; }
+
+.devicon-yii-plain-wordmark.colored,
+.devicon-yii-plain.colored {
+  color: #0073bb; }
+
+.devicon-zend-plain-wordmark.colored,
+.devicon-zend-plain.colored {
+  color: #68b604; }
+
+#protfolioContainer {
+  background: #fbfbfb;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: absolute; }
+
+#clInfo {
+  padding-left: 15px; }
+
+#cLFreelanceIntro {
+  padding: 0 15px;
+  line-height: 24px; }
+
+#containerLeft {
+  display: block;
+  height: 100vh;
+  background-color: #fbfbfb;
+  padding-top: 40px;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+  #containerLeft #cLNav ul li {
+    display: table-cell;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px; }
+
+.clNavSelected h3 a {
+  color: #191919;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: bottom; }
+.clNavSelected h3 a:hover {
+  text-decoration: none; }
+
+.clNavNotSelected h3 a {
+  color: #cfcfcf;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: bottom; }
+.clNavNotSelected h3 a:hover {
+  text-decoration: none;
+  color: #969696;
+  font-size: 32px;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease; }
+
+#containerRight {
+  position: relative;
+  display: block;
+  height: 100vh;
+  overflow: scroll;
+  background-color: #e8e8e8; }
+
+#projectsContainerOut {
+  height: 70vh;
+  top: 30vh;
+  position: absolute;
+  width: 100%;
+  overflow: hidden; }
+
+#projectsContainerIn {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.projectTabs, .trendingSounds, .mattRobinson, .nsg, .bzar, .michaelPollack, .starCity, .lyfebank, .projectTest {
+  position: relative;
+  display: block;
+  height: 130px;
+  width: 100%;
+  margin: 0 !important;
+  padding: 10px 20px;
+  border-left: solid 0px #191919;
+  -webkit-transition: border-left 0.2s ease, width 1.2s ease;
+  -moz-transition: border-left 0.2s ease, width 1.2s ease;
+  -o-transition: border-left 0.2s ease, width 1.2s ease;
+  -ms-transition: border-left 0.2s ease, width 1.2s ease; }
+  .projectTabs img, .trendingSounds img, .mattRobinson img, .nsg img, .bzar img, .michaelPollack img, .starCity img, .lyfebank img, .projectTest img {
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    -webkit-transition: right 0.2s ease;
+    -moz-transition: right 0.2s ease;
+    -o-transition: right 0.2s ease;
+    -ms-transition: right 0.2s ease; }
+
+.projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .projectTest:hover {
+  border-left: solid 10px #191919; }
+  .projectTabs:hover img, .trendingSounds:hover img, .mattRobinson:hover img, .nsg:hover img, .bzar:hover img, .michaelPollack:hover img, .starCity:hover img, .lyfebank:hover img, .projectTest:hover img {
+    right: 10px; }
+
+.projectTabs.ng-hide, .ng-hide.trendingSounds, .ng-hide.mattRobinson, .ng-hide.nsg, .ng-hide.bzar, .ng-hide.michaelPollack, .ng-hide.starCity, .ng-hide.lyfebank, .ng-hide.projectTest {
+  width: 10000px; }
+
+.projectTabs.ng-show, .ng-show.trendingSounds, .ng-show.mattRobinson, .ng-show.nsg, .ng-show.bzar, .ng-show.michaelPollack, .ng-show.starCity, .ng-show.lyfebank, .ng-show.projectTest {
+  width: 10px; }
+
+.projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .projectTest #projectName {
+  width: 50%;
+  color: white; }
+  .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .projectTest #projectName h1 {
+    font-size: 28px; }
+  .projectTabs #projectName h2, .trendingSounds #projectName h2, .mattRobinson #projectName h2, .nsg #projectName h2, .bzar #projectName h2, .michaelPollack #projectName h2, .starCity #projectName h2, .lyfebank #projectName h2, .projectTest #projectName h2 {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 10px; }
+
+.trendingSounds {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-trending.jpg") no-repeat center; }
+
+.mattRobinson {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-robinson.jpg") no-repeat center; }
+
+.nsg {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-nsg.jpg") no-repeat center; }
+
+.bzar {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-bzar.jpg") no-repeat center; }
+
+.michaelPollack {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-pollack.jpg") no-repeat center; }
+
+.starCity {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-starcity.jpg") no-repeat center; }
+
+.lyfebank {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-lyfebank.jpg") no-repeat center; }
+
+.projectTest {
+  background: #646464; }
+
+/* slide in from the bottom
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+
+rotate out newspaper
+@keyframes rotateOutNewspaper {
+	to 		{ transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+entering animations ---------------------------------------
+scale up
+@keyframes scaleUp {
+	from 	{ opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+slide in from the right
+@keyframes slideInRight {
+	from 	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}
+
+slide in from the bottom
+@keyframes slideInUp {
+	from 	{ transform:translateY(100%); }
+	to 		{ transform: translateY(0); }
+}
+ */
+.mainView.ng-enter {
+  animation: scaleUp 0.5s both ease-in;
+  z-index: 8888; }
+
+.mainView.ng-leave {
+  animation: slideOutLeft 0.5s both ease-in;
+  z-index: 9999; }
+
+* {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400; }
+
+body {
+  background-color: #191919;
+  color: white; }
+
+.clear {
+  clear: both; }
+
+#navContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #191919;
+  z-index: 1; }
+  #navContainer li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: 300; }
+  #navContainer li a:hover, #navContainer li a:active {
+    font-weight: 700; }
+  #navContainer ul li {
+    float: left;
+    display: block;
+    margin-left: 20px;
+    padding: 10px; }

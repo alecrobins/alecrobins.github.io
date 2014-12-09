@@ -1,0 +1,47 @@
+.projectContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 40px; }
+
+.projectMainImage {
+  height: 50vh;
+  width: 100%; }
+
+#trendingMainImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/TrendingSounds/main.jpg") center top;
+  background-size: cover; }
+
+.projectInfo {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  left: 10%; }
+  .projectInfo h1 {
+    padding: none !important; }
+
+.projectLink a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 10px 0px;
+  -webkit-transition: padding-right 0.2s ease;
+  -moz-transition: padding-right 0.2s ease;
+  -o-transition: padding-right 0.2s ease;
+  -ms-transition: padding-right 0.2s ease; }
+
+.projectLink a:hover {
+  padding-right: 50px;
+  color: white;
+  text-decoration: none; }
+
+.projectTech h2 {
+  color: #2d2d2d;
+  font-size: 20px; }
+
+#trendingSounds .projectLink a {
+  background-color: #0192ff;
+  border: 2px solid #0192ff; }

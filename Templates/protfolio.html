@@ -1,0 +1,75 @@
+<div id="protfolioContainer">
+
+		<div id="containerLeft" class="col-md-5">
+					<div id="clInfo">
+
+							<!-- nav that controls wether to show Freelance or Projects -->
+							<div id="cLNav">
+									<ul>
+										<li ng-class="freelanceSelect()"><h3><a ng-click="swap()">Freelance</a></h3></li>
+										<li ng-class="projectSelect()"><h3><a ng-click="swap()">Projects</a></h3></li>
+									</ul>
+							</div>
+							<div class="clear"></div>
+
+							<!-- intro for the freelance work -->
+							<div id="cLFreelanceIntro" class="cLIntro" ng-show="showFreelance">
+								<p>
+									I started making websites in middle school as a hobby.
+									Over the years I started turning my hobby into a profession.
+									Here are some of the websites I have made for a variety of clients.
+								</p>
+							</div>
+
+							<!-- intro for the projects -->
+							<div id="cLFreelanceIntro" class="cLIntro" ng-show="showProjects">
+								<p>
+									Projects! Projects! Projects .. . . I started making websites in middle school as a hobby.
+									Over the years I started turning my hobby into a profession.
+									Here are some of the websites I have made for a variety of clients.
+								</p>
+							</div>
+
+					</div>
+
+						<!-- show/hide the following when Projects are slected -->
+
+
+						<div id="projectsContainerOut">
+							<div id="projectsContainerIn">
+
+									<!-- List of freelance work -->
+									<div ng-repeat="site in freelance" ng-class="site.class" ng-show="showFreelance">
+											<div ng-click="site.link()" >
+													<div id="projectName">
+															<h1>{{site.name}}</h1>
+															<h2>{{site.date}}</h2>
+													</div>
+													<img src="Images/arrow.png" alt="arrow" />
+											</div>
+									</div>
+
+									<!-- List of all my projects -->
+									<div ng-repeat="project in projects" ng-class="project.class" ng-show="showProjects">
+										<div ng-click="project.link()" >
+											<div id="projectName">
+												<h1>{{project.name}}</h1>
+												<h2>{{project.date}}</h2>
+											</div>
+										</div>
+									</div>
+
+							</div>
+
+						</div>
+						<!-- 	</div>
+												</div> -->
+
+
+		</div> <!--end of containerLeft-->
+
+		<div id="containerRight" class="col-md-7">
+			<div class="rightAnimate" ng-include="currentProject" ></div>
+		</div>
+
+</div>

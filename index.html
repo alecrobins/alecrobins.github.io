@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <title>Alec Robins | Developer. Designer. Entrepurner.</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900,500,100,300,700,400' rel='stylesheet' type='text/css'>
+    <link href="Content/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" type='text/css'>
+    <link rel="stylesheet" href="Content/icons/devicon.css">
+    <link rel="stylesheet" href="Content/icons/devicon-colors.css">
+</head>
+    <body>
+
+			  <!--navbar - NavController resposible for the following content-->
+        <div id="myNav" role="navigation" ng-controller="NavController">
+						<div id="navContainer">
+								<ul>
+									<li><a ng-click="gotoProtfolio()">Protfolio</a></li>
+									<li><a ng-click="gotoContact()">Contact</a></li>
+								</ul>
+						</div>
+        </div>        
+
+<!-- the view will swap out home/portfolio/contact views -->
+       <div class="page {{ pageClass }}" ng-view></div>
+
+        <!-- Scripts -->
+				<script src="bower_components/jquery/dist/jquery.js"></script>
+				<script src="bower_components/angular/angular.js"></script>
+				<script src="bower_components/angular-animate/angular-animate.js"></script>
+				<script src="bower_components/angular-route/angular-route.js"></script>
+				<script src="Scripts/myScript.js"></script>
+        <!-- App -->
+        <script src="App/js/app.js"></script>
+
+        <!-- Controllers -->
+        <script src="App/js/controllers/HomeController.js"></script>
+				<script src="App/js/controllers/NavController.js"></script>
+				<script src="App/js/controllers/ProtfolioController.js"></script>
+
+
+
+    </body>
+</html>

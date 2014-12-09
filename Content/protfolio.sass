@@ -1,0 +1,204 @@
+//import the project views
+@import projectView
+@import icons
+
+//media breaks
+$break-tablet-min: 768px
+$break-tablet-max: 1024
+
+$break-mobile-min: 320px
+$break-mobile-max: 568px
+
+//base url
+$base: "http://localhost:8000/AlecRobins/"
+
+//project/freelance backgrounds
+
+
+//makes the background photo the full page
+#protfolioContainer
+	background: rgb(251,251,251)
+	width: 100%
+	height: 100vh
+	background-size: cover
+	position: absolute
+
+#clInfo
+	padding-left: 15px
+
+#cLFreelanceIntro
+	padding: 0 15px
+	line-height: 24px
+
+#containerLeft
+	display: block
+	height: 100vh
+	background-color: rgb(251,251,251)
+	padding-top: 40px
+	padding-left: 0 !important
+	padding-right: 0 !important
+
+	#cLNav ul li
+		display: table-cell
+		float: left
+		margin-left: 10px
+		margin-top: 5px
+
+//class for selected/unselected nav buttons
+.clNavSelected
+	h3 a
+		color: rgb(25,25,25)
+		font-weight: 700
+		font-size: 36px
+		text-align: bottom
+	h3 a:hover
+		text-decoration: none
+
+.clNavNotSelected
+	h3 a
+		color: rgb(207,207,207)
+		font-weight: 500
+		font-size: 30px
+		text-align: bottom
+	h3 a:hover
+		text-decoration: none
+		color: rgb(150,150,150)
+		font-size: 32px
+		-webkit-transition: all 0.1s ease
+		-moz-transition: all 0.1s ease
+		-o-transition: all 0.1s ease
+		-ms-transition: all 0.1s ease
+
+#containerRight
+	//border-left: solid 1px rgb(25,25,25)
+	position: relative
+	display: block
+	height: 100vh
+	overflow: scroll
+	background-color: rgb(232,232,232)
+
+#projectsContainerOut
+	height: 70vh
+	top: 30vh
+	position: absolute
+	width: 100%
+	overflow: hidden
+
+#projectsContainerIn
+	height: 100%
+	overflow-y: auto
+	overflow-x: hidden
+
+// Project Specific CSS
+	// "Project" represents both freelance and projects
+.projectTabs
+	position: relative
+	display: block
+	height: 130px
+	width: 100%
+	margin: 0 !important
+	padding: 10px 20px
+	border-left: solid 0px rgb(25,25,25)
+	-webkit-transition: border-left 0.2s ease, width 1.2s ease
+	-moz-transition: border-left 0.2s ease, width 1.2s ease
+	-o-transition: border-left 0.2s ease, width 1.2s ease
+	-ms-transition: border-left 0.2s ease, width 1.2s ease
+	img
+		position: absolute
+		right: 20px
+		top: 45%
+		-webkit-transition: right 0.2s ease
+		-moz-transition: right 0.2s ease
+		-o-transition: right 0.2s ease
+		-ms-transition: right 0.2s ease
+
+	//project tabs animations
+.projectTabs:hover
+	border-left: solid 10px rgb(25,25,25)
+	img
+		right: 10px
+
+.projectTabs.ng-hide
+	width: 10000px
+
+.projectTabs.ng-show
+	width: 10px
+
+	//Titles for the projects
+		// flush left, white font
+.projectTabs #projectName
+	width: 50%
+	color: white
+	h1
+		font-size: 28px
+	h2
+		display: block
+		font-size: 20px
+		font-weight: 300
+		position: absolute
+		bottom: 10px
+
+////FREELANCE WORK
+	//Trending Sounds
+.trendingSounds
+	@extend .projectTabs
+	background: url($base + 'Images/Freelance-Bg/bg-trending.jpg') no-repeat center
+
+	//Matt Robinson Tunes
+.mattRobinson
+	@extend .projectTabs
+	background: url($base + 'Images/Freelance-Bg/bg-robinson.jpg') no-repeat center
+
+	//Nashville Social Group
+.nsg
+	@extend .projectTabs
+	background: url($base + 'Images/Freelance-Bg/bg-nsg.jpg') no-repeat center
+
+	//bzar
+.bzar
+	@extend .projectTabs
+	background: url($base + 'Images/Freelance-Bg/bg-bzar.jpg') no-repeat center
+
+	//Michael Pollack
+.michaelPollack
+	@extend .projectTabs
+	background: url($base + 'Images/Freelance-Bg/bg-pollack.jpg') no-repeat center
+
+	//Star City In & Suites
+.starCity
+	@extend .projectTabs
+	background: url($base + 'Images/Freelance-Bg/bg-starcity.jpg') no-repeat center
+
+	//LyfeBank Ohio
+.lyfebank
+	@extend .projectTabs
+	background: url($base + 'Images/Freelance-Bg/bg-lyfebank.jpg') no-repeat center
+
+.projectTest
+	@extend .projectTabs
+	background: rgb(100,100,100)
+
+//// animations for projects
+
+//
+// .rightAnimate
+// 	margin-left: 0
+//
+// .rightAnimate.ng-enter, .slide-animate.ng-leave
+// 	-webkit-transition: all 1s ease-in-out
+// 	-moz-transition: all 1s ease-in-out
+// 	-ms-transition: all 1s ease-in-out
+// 	-o-transition: all 1s ease-in-out
+// 	transition: all 1s ease-in-out
+//
+// .rightAnimate.ng-enter
+// 	margin-left: 100vw
+//
+// .rightAnimate.ng-enter.ng-enter-active
+// 	margin-left: 0
+//
+// .rightAnimate.ng-leave
+// 	background-color: red
+//
+// .rightAnimate.ng-leave.ng-leave-active
+// 	background-color: green

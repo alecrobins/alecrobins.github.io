@@ -1,0 +1,56 @@
+// in charge of displaying the projects
+
+//base url
+$base: "http://localhost:8000/AlecRobins/"
+
+//general project views
+
+.projectContainer
+	overflow-x: hidden
+	overflow-y: scroll
+	padding-top: 40px
+
+.projectMainImage
+	height: 50vh
+	width: 100%
+
+#trendingMainImage
+	background: url($base + 'Images/Freelance/TrendingSounds/main.jpg') center top
+	background-size: cover
+
+.projectInfo
+	padding-top: 10px
+	margin: 0 auto
+	width: 80%
+	max-width: 600px
+	left: 10%
+	h1
+		padding: none !important
+
+.projectLink a
+	display: inline-block
+	color: white
+	text-decoration: none
+	padding: 5px 20px
+	border-radius: 25px
+	white-space: nowrap
+	margin: 10px 0px
+	-webkit-transition: padding-right 0.2s ease
+	-moz-transition: padding-right 0.2s ease
+	-o-transition: padding-right 0.2s ease
+	-ms-transition: padding-right 0.2s ease
+
+.projectLink a:hover
+	padding-right: 50px
+	color: white
+	text-decoration: none
+
+.projectTech
+	h2
+		//off grey
+		color: rgb(45,45,45)
+		font-size: 20px
+
+#trendingSounds .projectLink a
+	background-color: rgb(1,146,255)
+	border: 2px solid rgb(1,146,255)

@@ -1,0 +1,16 @@
+{
+  "name": "bower.json",
+  "version": "0.0.0",
+  "authors": [
+    "Alec Robins <alecrobins@gmail.com>"
+  ],
+  "description": "bower packages",
+  "main": "bower.json",
+  "license": "MIT",
+  "homepage": "alecrobins.com",
+  "private": true,
+  "dependencies": {
+    "angularjs": "~1.3.4",
+    "jquery": "~2.1.1"
+  }
+}
