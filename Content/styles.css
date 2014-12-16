@@ -124,7 +124,7 @@ h1, h2, h3 {
   border: 2px solid #0192ff; }
 
 #icon {
-  max-width: 2em; }
+  max-width: 4em; }
 
 .devicon-amazonwebservices-plain-wordmark.colored,
 .devicon-amazonwebservices-original.colored,
@@ -201,8 +201,9 @@ h1, h2, h3 {
   color: #008cba; }
 
 .devicon-git-plain-wordmark.colored,
-.devicon-git-plain.colored {
-  color: red; }
+.devicon-git-plain.colored,
+.devicon-git-plain path {
+  fill: red; }
 
 .devicon-grunt-line-wordmark.colored,
 .devicon-grunt-line.colored,
