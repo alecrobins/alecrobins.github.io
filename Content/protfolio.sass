@@ -14,7 +14,6 @@ $base: "http://localhost:8000/AlecRobins/"
 
 //project/freelance backgrounds
 
-
 //makes the background photo the full page
 #protfolioContainer
 	background: rgb(251,251,251)
@@ -58,12 +57,13 @@ $base: "http://localhost:8000/AlecRobins/"
 	h3 a
 		color: rgb(207,207,207)
 		font-weight: 500
-		font-size: 30px
+		font-size: 36px
 		text-align: bottom
 	h3 a:hover
 		text-decoration: none
 		color: rgb(150,150,150)
-		font-size: 32px
+		font-size: 36px
+		font-weight: 700
 		-webkit-transition: all 0.1s ease
 		-moz-transition: all 0.1s ease
 		-o-transition: all 0.1s ease
@@ -74,7 +74,8 @@ $base: "http://localhost:8000/AlecRobins/"
 	position: relative
 	display: block
 	height: 100vh
-	overflow: scroll
+	overflow-y: scroll
+	overflow-x: hidden
 	background-color: rgb(232,232,232)
 
 #projectsContainerOut
@@ -91,6 +92,31 @@ $base: "http://localhost:8000/AlecRobins/"
 
 // Project Specific CSS
 	// "Project" represents both freelance and projects
+
+.tabWrapper, .tabWrapper.ng-hide-add,
+.tabWrapper.ng-hide-remove.ng-hide-remove-active
+	width: 100%
+	margin-left: 0
+
+.tabWrapper.ng-hide-add.ng-hide-add-active,
+	transition: margin-left 1.2s 0s ease
+	-webkit-transition: margin-left 1.2s 0s ease
+	-moz-transition: margin-left 1.2s 0s ease
+	-o-transition: margin-left 1.2s 0s ease
+	-ms-transition: margin-left 1.2s 0s ease
+
+.tabWrapper.ng-hide-remove.ng-hide-remove-active
+	transition: margin-left 1.2s 1s ease
+	-webkit-transition: margin-left 1.2s 1s ease
+	-moz-transition: margin-left 1.2s 1s ease
+	-o-transition: margin-left 1.2s 1s ease
+	-ms-transition: margin-left 1.2s 1s ease
+
+.tabWrapper.ng-hide, .tabWrapper.ng-hide-add.ng-hide-add-active,
+.tabWrapper.ng-hide-remove
+	margin-left: -1000px
+	background-color: red
+
 .projectTabs
 	position: relative
 	display: block
@@ -99,6 +125,7 @@ $base: "http://localhost:8000/AlecRobins/"
 	margin: 0 !important
 	padding: 10px 20px
 	border-left: solid 0px rgb(25,25,25)
+	background-size: cover !important
 	-webkit-transition: border-left 0.2s ease, width 1.2s ease
 	-moz-transition: border-left 0.2s ease, width 1.2s ease
 	-o-transition: border-left 0.2s ease, width 1.2s ease
@@ -179,26 +206,39 @@ $base: "http://localhost:8000/AlecRobins/"
 	background: rgb(100,100,100)
 
 //// animations for projects
+// TODO: un comment when in production
+.rightAnimate
+	left: 0
+	position: absolute
+	width: 100%
+	overflow-x: hidden
 
-//
-// .rightAnimate
-// 	margin-left: 0
-//
-// .rightAnimate.ng-enter, .slide-animate.ng-leave
-// 	-webkit-transition: all 1s ease-in-out
-// 	-moz-transition: all 1s ease-in-out
-// 	-ms-transition: all 1s ease-in-out
-// 	-o-transition: all 1s ease-in-out
-// 	transition: all 1s ease-in-out
-//
-// .rightAnimate.ng-enter
-// 	margin-left: 100vw
-//
-// .rightAnimate.ng-enter.ng-enter-active
-// 	margin-left: 0
-//
-// .rightAnimate.ng-leave
-// 	background-color: red
-//
-// .rightAnimate.ng-leave.ng-leave-active
-// 	background-color: green
+.rightAnimate.ng-enter
+	-webkit-transition: all 1s 0.5s ease
+	-moz-transition: all 1s 0.5s ease
+	-ms-transition: all 1s 0.5s ease
+	-o-transition: all 1s 0.5s ease
+	transition: all 1s 0.5s ease
+	left: 0
+	position: absolute
+	width: 100%
+	overflow-x: hidden
+
+.rightAnimate.ng-leave
+	-webkit-transition: all 0.7s 0s ease
+	-moz-transition: all 0.7s 0s ease-out
+	-ms-transition: all 0.7s 0s ease-out
+	-o-transition: all 0.7s 0s ease-out
+	transition: all 0.7s 0s ease-out
+
+.rightAnimate.ng-enter
+	left: 100vw
+
+.rightAnimate.ng-enter.ng-enter-active
+	left: 0
+
+.rightAnimate.ng-leave
+	left: 0
+
+.rightAnimate.ng-leave.ng-leave-active
+	left: 100vw

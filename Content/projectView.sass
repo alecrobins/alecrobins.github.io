@@ -9,14 +9,13 @@ $base: "http://localhost:8000/AlecRobins/"
 	overflow-x: hidden
 	overflow-y: scroll
 	padding-top: 40px
+	padding-bottom: 20px
 
 .projectMainImage
 	height: 50vh
 	width: 100%
-
-#trendingMainImage
-	background: url($base + 'Images/Freelance/TrendingSounds/main.jpg') center top
 	background-size: cover
+	background-repeat: no-repeat
 
 .projectInfo
 	padding-top: 10px
@@ -27,30 +26,100 @@ $base: "http://localhost:8000/AlecRobins/"
 	h1
 		padding: none !important
 
-.projectLink a
+.projectLink a, .githubLink a
 	display: inline-block
 	color: white
 	text-decoration: none
-	padding: 5px 20px
+	padding: 7px 20px 7px 40px
 	border-radius: 25px
 	white-space: nowrap
 	margin: 10px 0px
-	-webkit-transition: padding-right 0.2s ease
-	-moz-transition: padding-right 0.2s ease
-	-o-transition: padding-right 0.2s ease
-	-ms-transition: padding-right 0.2s ease
+	box-shadow: 0
+	float: left
+	background-repeat: no-repeat
+	background-position: 10px center
+	transition: all 0.2s ease
 
-.projectLink a:hover
-	padding-right: 50px
+.projectLink a
+	background-image: url($base + 'Images/bg-link.png')
+	background-size: 15px
+	margin-right: 10px
+
+.githubLink a
+	background-image: url($base + 'Images/bg-github.png')
+	background-size: 20px
+	background-color: rgb(10,10,10)
+
+.projectLink a:hover, .githubLink a:hover
+	//padding-right: 50px
 	color: white
 	text-decoration: none
+	box-shadow: 0 0 5px #515151
+
+	transform: scale(1.01)
+	-moz-transform: scale(1.01)
+	-webkit-transform: scale(1.01)
+	-o-transform: scale(1.01)
+	-ms-transform: scale(1.01)
 
 .projectTech
 	h2
 		//off grey
 		color: rgb(45,45,45)
 		font-size: 20px
+		margin-bottom: 10px
 
 #trendingSounds .projectLink a
 	background-color: rgb(1,146,255)
-	border: 2px solid rgb(1,146,255)
+
+#robinson .projectLink a
+	background-color: rgb(141,39,41)
+
+#pollack .projectLink a
+	background-color: rgb(60,60,60)
+
+#lyfebank .projectLink a
+	background-color: rgb(52,218,181)
+
+#bzar .projectLink a
+	background-color: rgb(254,160,38)
+
+#starcity .projectLink a
+	background-color: rgb(42,116,199)
+
+// Backgrounds for Main Image
+
+#trendingMainImage
+	background: url($base + 'Images/Freelance/TrendingSounds/main.jpg') center top
+	background-size: 100%
+	background-repeat: no-repeat
+
+#robinsonImage
+	background: url($base + 'Images/Freelance/MattRobinson/home.png') center top
+	background-size: 100%
+	background-repeat: no-repeat
+
+#nsgImage
+	background: url($base + 'Images/Freelance/NSG/home.png') center top
+	background-size: 100%
+	background-repeat: no-repeat
+
+#pollackImage
+	background: url($base + 'Images/Freelance/Pollack/home.png') center top
+	background-size: 100%
+	background-repeat: no-repeat
+
+#bzarImage
+	background: url($base + 'Images/Freelance/Bzar/home.png') center top
+	background-size: 100%
+	background-repeat: no-repeat
+
+#starcityImage
+	background: url($base + 'Images/Freelance/StarCity/home.png') center top
+	background-size: 100%
+	background-repeat: no-repeat
+
+#lyfebankImage
+	background: url($base + 'Images/Freelance/LyfeBank/home.png') center top
+	background-size: 100%
+	background-repeat: no-repeat

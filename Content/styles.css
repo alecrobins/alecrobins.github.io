@@ -78,15 +78,14 @@ h1, h2, h3 {
 .projectContainer {
   overflow-x: hidden;
   overflow-y: scroll;
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 20px; }
 
 .projectMainImage {
   height: 50vh;
-  width: 100%; }
-
-#trendingMainImage {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance/TrendingSounds/main.jpg") center top;
-  background-size: cover; }
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .projectInfo {
   padding-top: 10px;
@@ -97,34 +96,104 @@ h1, h2, h3 {
   .projectInfo h1 {
     padding: none !important; }
 
-.projectLink a {
+.projectLink a, .githubLink a {
   display: inline-block;
   color: white;
   text-decoration: none;
-  padding: 5px 20px;
+  padding: 7px 20px 7px 40px;
   border-radius: 25px;
   white-space: nowrap;
   margin: 10px 0px;
-  -webkit-transition: padding-right 0.2s ease;
-  -moz-transition: padding-right 0.2s ease;
-  -o-transition: padding-right 0.2s ease;
-  -ms-transition: padding-right 0.2s ease; }
+  box-shadow: 0;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  transition: all 0.2s ease; }
 
-.projectLink a:hover {
-  padding-right: 50px;
+.projectLink a {
+  background-image: url("http://localhost:8000/AlecRobins/Images/bg-link.png");
+  background-size: 15px;
+  margin-right: 10px; }
+
+.githubLink a {
+  background-image: url("http://localhost:8000/AlecRobins/Images/bg-github.png");
+  background-size: 20px;
+  background-color: #0a0a0a; }
+
+.projectLink a:hover, .githubLink a:hover {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  box-shadow: 0 0 5px #515151;
+  transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  -ms-transform: scale(1.01); }
 
 .projectTech h2 {
   color: #2d2d2d;
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 10px; }
 
 #trendingSounds .projectLink a {
-  background-color: #0192ff;
-  border: 2px solid #0192ff; }
+  background-color: #0192ff; }
 
-#icon {
-  max-width: 4em; }
+#robinson .projectLink a {
+  background-color: #8d2729; }
+
+#pollack .projectLink a {
+  background-color: #3c3c3c; }
+
+#lyfebank .projectLink a {
+  background-color: #34dab5; }
+
+#bzar .projectLink a {
+  background-color: #fea026; }
+
+#starcity .projectLink a {
+  background-color: #2a74c7; }
+
+#trendingMainImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/TrendingSounds/main.jpg") center top;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#robinsonImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/MattRobinson/home.png") center top;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#nsgImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/NSG/home.png") center top;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#pollackImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/Pollack/home.png") center top;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#bzarImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/Bzar/home.png") center top;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#starcityImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/StarCity/home.png") center top;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#lyfebankImage {
+  background: url("http://localhost:8000/AlecRobins/Images/Freelance/LyfeBank/home.png") center top;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.projectIcons {
+  max-width: 4em;
+  display: block;
+  width: 4em;
+  float: left;
+  margin-right: 10px; }
 
 .devicon-amazonwebservices-plain-wordmark.colored,
 .devicon-amazonwebservices-original.colored,
@@ -372,12 +441,13 @@ h1, h2, h3 {
 .clNavNotSelected h3 a {
   color: #cfcfcf;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 36px;
   text-align: bottom; }
 .clNavNotSelected h3 a:hover {
   text-decoration: none;
   color: #969696;
-  font-size: 32px;
+  font-size: 36px;
+  font-weight: 700;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -387,7 +457,8 @@ h1, h2, h3 {
   position: relative;
   display: block;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #e8e8e8; }
 
 #projectsContainerOut {
@@ -402,6 +473,30 @@ h1, h2, h3 {
   overflow-y: auto;
   overflow-x: hidden; }
 
+.tabWrapper, .tabWrapper.ng-hide-add,
+.tabWrapper.ng-hide-remove.ng-hide-remove-active {
+  width: 100%;
+  margin-left: 0; }
+
+.tabWrapper.ng-hide-add.ng-hide-add-active {
+  transition: margin-left 1.2s 0s ease;
+  -webkit-transition: margin-left 1.2s 0s ease;
+  -moz-transition: margin-left 1.2s 0s ease;
+  -o-transition: margin-left 1.2s 0s ease;
+  -ms-transition: margin-left 1.2s 0s ease; }
+
+.tabWrapper.ng-hide-remove.ng-hide-remove-active {
+  transition: margin-left 1.2s 1s ease;
+  -webkit-transition: margin-left 1.2s 1s ease;
+  -moz-transition: margin-left 1.2s 1s ease;
+  -o-transition: margin-left 1.2s 1s ease;
+  -ms-transition: margin-left 1.2s 1s ease; }
+
+.tabWrapper.ng-hide, .tabWrapper.ng-hide-add.ng-hide-add-active,
+.tabWrapper.ng-hide-remove {
+  margin-left: -1000px;
+  background-color: red; }
+
 .projectTabs, .trendingSounds, .mattRobinson, .nsg, .bzar, .michaelPollack, .starCity, .lyfebank, .projectTest {
   position: relative;
   display: block;
@@ -410,6 +505,7 @@ h1, h2, h3 {
   margin: 0 !important;
   padding: 10px 20px;
   border-left: solid 0px #191919;
+  background-size: cover !important;
   -webkit-transition: border-left 0.2s ease, width 1.2s ease;
   -moz-transition: border-left 0.2s ease, width 1.2s ease;
   -o-transition: border-left 0.2s ease, width 1.2s ease;
@@ -469,6 +565,42 @@ h1, h2, h3 {
 
 .projectTest {
   background: #646464; }
+
+.rightAnimate {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden; }
+
+.rightAnimate.ng-enter {
+  -webkit-transition: all 1s 0.5s ease;
+  -moz-transition: all 1s 0.5s ease;
+  -ms-transition: all 1s 0.5s ease;
+  -o-transition: all 1s 0.5s ease;
+  transition: all 1s 0.5s ease;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden; }
+
+.rightAnimate.ng-leave {
+  -webkit-transition: all 0.7s 0s ease;
+  -moz-transition: all 0.7s 0s ease-out;
+  -ms-transition: all 0.7s 0s ease-out;
+  -o-transition: all 0.7s 0s ease-out;
+  transition: all 0.7s 0s ease-out; }
+
+.rightAnimate.ng-enter {
+  left: 100vw; }
+
+.rightAnimate.ng-enter.ng-enter-active {
+  left: 0; }
+
+.rightAnimate.ng-leave {
+  left: 0; }
+
+.rightAnimate.ng-leave.ng-leave-active {
+  left: 100vw; }
 
 /* slide in from the bottom
 @keyframes slideOutLeft {

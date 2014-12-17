@@ -44,6 +44,7 @@ function ($scope) {
 					"date": "Summer 2014",
 					"url": "Templates/freelance/trendingSounds.html",
 					"class": "trendingSounds",
+					"images": ["Images/Freelance-Bg/bg-trending.jpg"],
 					"link": function (){ projectLink(this);}
 				},
 				{ "name": "Matt Robinson Tunes",
@@ -107,5 +108,6 @@ function ($scope) {
 			// set the current project to the project selected
 			function projectLink(project){
 					$scope.currentProject = project.url;
+					
 			};
 }]);

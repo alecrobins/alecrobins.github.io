@@ -1,5 +1,9 @@
-#icon {
-  max-width: 4em; }
+.projectIcons {
+  max-width: 4em;
+  display: block;
+  width: 4em;
+  float: left;
+  margin-right: 10px; }
 
 .devicon-amazonwebservices-plain-wordmark.colored,
 .devicon-amazonwebservices-original.colored,
