@@ -32,24 +32,30 @@ body
 	width: 100%
 	height: 40px
 	background-color: rgb(25,25,25)
+	box-shadow: 0 0 5px rgb(25,25,25)
 	z-index: 1
 	li a
 		display: inline-block
 		color: white
 		text-decoration: none
 		font-weight: 300
-	li a:hover, li a:active
-		font-weight: 700
+	li:hover
+		background-color: rgb(60,60,60)
+	li:first-child:hover
+		background-color: inherit
+		img
+			width: 24px
+			margin-top: -2px
 
 	ul li
 		float: left
 		display: block
 		margin-left: 20px
 		padding: 10px
-		-webkit-transition: all 1s ease
-		-moz-transition: all 1s ease
-		-o-transition: all 1s ease
-		-ms-transition: all 1s ease
+		-webkit-transition: all .3s ease
+		-moz-transition: all .3s ease
+		-o-transition: all .3s ease
+		-ms-transition: all .3s ease
 
 #navHome
 	-webkit-transition: all 1s ease
@@ -57,6 +63,381 @@ body
 	-o-transition: all 1s ease
 	-ms-transition: all 1s ease
 	opacity: 0
+	width: 0px
 
-#navHome .ng-hide
+#navHome, #navHome.ng-hide-add,
+#navHome.ng-hide-remove.ng-hide-remove-active
 	opacity: 1
+	width: inherit
+
+#navHome.ng-hide-add.ng-hide-add-active,
+#navHome.ng-hide-remove.ng-hide-remove-active
+	transition: all .5s 0s ease
+	-webkit-transition: all .5s 0s ease
+	-moz-transition: all .5s 0s ease
+	-o-transition: all .5s 0s ease
+	-ms-transition: all .5s 0s ease
+
+#navHome.ng-hide, #navHome.ng-hide-add.ng-hide-add-active,
+#navHome.ng-hide-remove
+	opacity: 0
+	width: 0px
+
+// view animation
+//
+// .view-animate.ng-enter, .view-animate.ng-leave
+// 	-webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s
+// 	transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s
+//
+// 	display: block
+// 	width: 100%
+// 	border-left: px solid black
+//
+// 	position: absolute
+// 	top: 0
+// 	left: 0
+// 	right: 0
+// 	bottom: 0
+//
+//
+// .view-animate.ng-enter
+// 	left: 100%
+//
+// .view-animate.ng-enter.ng-enter-active
+// 	left: 0
+//
+// .view-animate.ng-leave.ng-leave-active
+// 	left: -100%
+
+
+/* Transitions */
+
+/* Default Enter/Leave */
+
+.page-view
+
+	position: absolute
+	top: 0
+	left: 0
+
+	width: 100%
+	height: 100%
+	/*backface-visibility*/
+
+	-webkit-backface-visibility: hidden
+	-moz-backface-visibility: hidden
+	-ms-backface-visibility: hidden
+	-o-backface-visibility: hidden
+	backface-visibility: hidden
+	/*perspective*/
+	-webkit-perspective: 1000
+	-moz-perspective: 1000
+	-ms-perspective: 1000
+	-o-perspective: 1000
+	perspective: 1000
+
+
+.ng-enter,
+.ng-leave
+
+	/*transition-timing-function*/
+	-webkit-transition-timing-function: ease
+	-moz-transition-timing-function: ease
+	-o-transition-timing-function: ease
+	transition-timing-function: ease
+	/*transition-duration*/
+	-webkit-transition-duration: 1s
+	-moz-transition-duration: 1s
+	-o-transition-duration: 1s
+	transition-duration: 1s
+	/*transition-property*/
+	-webkit-transition-property: opacity
+	-moz-transition-property: opacity
+	-o-transition-property: opacity
+	transition-property: opacity
+
+.ng-enter
+
+	opacity: 0
+
+.ng-enter.ng-enter-active
+
+	opacity: 1
+
+.ng-leave
+
+	opacity: 1
+
+.ng-leave.ng-leave-active
+
+	opacity: 0
+
+/* crossFade */
+.crossFade.ng-enter
+
+	/*transition-duration*/
+	-webkit-transition-duration: 100ms
+	-moz-transition-duration: 100ms
+	-o-transition-duration: 100ms
+	transition-duration: 100ms
+
+	opacity: 0
+
+.crossFade.ng-enter.ng-enter-active
+
+	opacity: 1
+
+.crossFade.ng-leave
+
+	/*transition-duration*/
+	-webkit-transition-duration: 100ms
+	-moz-transition-duration: 100ms
+	-o-transition-duration: 100ms
+	transition-duration: 100ms
+
+	opacity: 1
+
+.crossFade.ng-leave.ng-leave-active
+
+	opacity: 0
+
+/* slideRight */
+.slideRight
+
+	opacity: 1 !important
+
+.slideRight.ng-enter
+
+	/*transition-property*/
+	-webkit-transition-property: none
+	-moz-transition-property: none
+	-o-transition-property: none
+	transition-property: none
+	/*transform*/
+	-webkit-transform: translate3d(-100%,0,0)
+	-moz-transform: translate3d(-100%,0,0)
+	-ms-transform: translate3d(-100%,0,0)
+	-o-transform: translate3d(-100%,0,0)
+	transform: translate3d(-100%,0,0)
+
+.slideRight.ng-enter.ng-enter-active
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,0,0)
+	-moz-transform: translate3d(0,0,0)
+	-ms-transform: translate3d(0,0,0)
+	-o-transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
+
+.slideRight.ng-leave
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,0,0)
+	-moz-transform: translate3d(0,0,0)
+	-ms-transform: translate3d(0,0,0)
+	-o-transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
+
+.slideRight.ng-leave.ng-leave-active
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(100%,0,0)
+	-moz-transform: translate3d(100%,0,0)
+	-ms-transform: translate3d(100%,0,0)
+	-o-transform: translate3d(100%,0,0)
+	transform: translate3d(100%,0,0)
+
+/* slideLeft */
+.slideLeft
+
+	opacity: 1 !important
+
+.slideLeft.ng-enter
+
+	/*transition-property*/
+	-webkit-transition-property: none
+	-moz-transition-property: none
+	-o-transition-property: none
+	transition-property: none
+	/*transform*/
+	-webkit-transform: translate3d(100%,0,0)
+	-moz-transform: translate3d(100%,0,0)
+	-ms-transform: translate3d(100%,0,0)
+	-o-transform: translate3d(100%,0,0)
+	transform: translate3d(100%,0,0)
+
+.slideLeft.ng-enter.ng-enter-active
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,0,0)
+	-moz-transform: translate3d(0,0,0)
+	-ms-transform: translate3d(0,0,0)
+	-o-transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
+
+.slideLeft.ng-leave
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,0,0)
+	-moz-transform: translate3d(0,0,0)
+	-ms-transform: translate3d(0,0,0)
+	-o-transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
+
+.slideLeft.ng-leave.ng-leave-active
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(-100%,0,0)
+	-moz-transform: translate3d(-100%,0,0)
+	-ms-transform: translate3d(-100%,0,0)
+	-o-transform: translate3d(-100%,0,0)
+	transform: translate3d(-100%,0,0)
+
+/* slideDown */
+
+.slideDown.ng-enter
+
+	/*transition-property*/
+	-webkit-transition-property: none
+	-moz-transition-property: none
+	-o-transition-property: none
+	transition-property: none
+	/*transform*/
+	-webkit-transform: translate3d(0,-100%,0)
+	-moz-transform: translate3d(0,-100%,0)
+	-ms-transform: translate3d(0,-100%,0)
+	-o-transform: translate3d(0,-100%,0)
+	transform: translate3d(0,-100%,0)
+
+.slideDown.ng-enter.ng-enter-active
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,0,0)
+	-moz-transform: translate3d(0,0,0)
+	-ms-transform: translate3d(0,0,0)
+	-o-transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
+
+.slideDown.ng-leave
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,0,0)
+	-moz-transform: translate3d(0,0,0)
+	-ms-transform: translate3d(0,0,0)
+	-o-transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
+
+.slideDown.ng-leave.ng-leave-active
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,100%,0)
+	-moz-transform: translate3d(0,100%,0)
+	-ms-transform: translate3d(0,100%,0)
+	-o-transform: translate3d(0,100%,0)
+	transform: translate3d(0,100%,0)
+
+/* slideUp */
+.slideUp
+
+	opacity: 1 !important
+
+.slideUp.ng-enter
+
+	/*transition-property*/
+	-webkit-transition-property: none
+	-moz-transition-property: none
+	-o-transition-property: none
+	transition-property: none
+	/*transform*/
+	-webkit-transform: translate3d(0,100%,0)
+	-moz-transform: translate3d(0,100%,0)
+	-ms-transform: translate3d(0,100%,0)
+	-o-transform: translate3d(0,100%,0)
+	transform: translate3d(0,100%,0)
+
+.slideUp.ng-enter.ng-enter-active
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,0,0)
+	-moz-transform: translate3d(0,0,0)
+	-ms-transform: translate3d(0,0,0)
+	-o-transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
+
+.slideUp.ng-leave
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,0,0)
+	-moz-transform: translate3d(0,0,0)
+	-ms-transform: translate3d(0,0,0)
+	-o-transform: translate3d(0,0,0)
+	transform: translate3d(0,0,0)
+
+.slideUp.ng-leave.ng-leave-active
+
+	/*transition-property*/
+	-webkit-transition-property: all
+	-moz-transition-property: all
+	-o-transition-property: all
+	transition-property: all
+	/*transform*/
+	-webkit-transform: translate3d(0,-100%,0)
+	-moz-transform: translate3d(0,-100%,0)
+	-ms-transform: translate3d(0,-100%,0)
+	-o-transform: translate3d(0,-100%,0)
+	transform: translate3d(0,-100%,0)

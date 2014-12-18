@@ -14,20 +14,21 @@
         <div id="myNav" role="navigation" ng-controller="NavController">
 						<div id="navContainer">
 								<ul>
-                  <li id="navHome" ng-hide="isHome">
-                      <a ng-click="gotoHome()">
+                  <li >
+                      <a ng-click="go('/', 'slideRight')" id="navHome" ng-hide="isHome">
                        <img src="Images/profile.png" alt="Alec Robins Profile" width="22px"/>
                      </a>
                   </li>
-                  <li><a ng-click="gotoProtfolio()">Protfolio</a></li>
-                  <li><a href="#">Resume</a></li>
+                  <li><a ng-click="go('/', 'slideRight')">About</a></li>
+                  <li><a ng-click="go('/protfolio', 'slideLeft')">Protfolio</a></li>
+                  <li><a href="Documents/AlecRobinsResume.pdf" target="_blank">Resume</a></li>
                   <li><a ng-click="gotoContact()">Contact</a></li>
 								</ul>
 						</div>
         </div>
 
 <!-- the view will swap out home/portfolio/contact views -->
-       <div class="page {{ pageClass }}" ng-view></div>
+       <div class="page-view" ng-class="pageAnimationClass" ng-view></div>
 
         <!-- Scripts -->
 				<script src="bower_components/jquery/dist/jquery.js"></script>
