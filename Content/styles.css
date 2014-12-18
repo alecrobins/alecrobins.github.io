@@ -72,8 +72,46 @@ h1, h2, h3 {
     font-size: 1.5em; }
 
 #homeProfile {
-  display: table;
-  margin: 0 auto; }
+  position: relative;
+  height: 147px; }
+
+#homeProfile img {
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  z-index: 99999;
+  -webkit-transition: left 1s ease;
+  -moz-transition: left 1s ease;
+  -o-transition: left 1s ease;
+  -ms-transition: left 1s ease; }
+
+#homeProfile #homeInfo {
+  background: rgba(216, 216, 216, 0.85);
+  width: 0px;
+  height: 147px;
+  position: absolute;
+  left: 50%;
+  border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+  border: 0px solid black;
+  overflow: hidden;
+  padding: 15px 15px 15px 100px;
+  opacity: 0;
+  font-size: 16px;
+  z-index: 999;
+  box-shadow: 0 0 15px #3c3c3c;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease; }
+
+#homeProfile:hover img {
+  left: 20%; }
+#homeProfile:hover #homeInfo {
+  left: 20%;
+  width: 70%;
+  opacity: 1; }
 
 .projectContainer {
   overflow-x: hidden;
@@ -524,12 +562,6 @@ h1, h2, h3 {
   .projectTabs:hover img, .trendingSounds:hover img, .mattRobinson:hover img, .nsg:hover img, .bzar:hover img, .michaelPollack:hover img, .starCity:hover img, .lyfebank:hover img, .projectTest:hover img {
     right: 10px; }
 
-.projectTabs.ng-hide, .ng-hide.trendingSounds, .ng-hide.mattRobinson, .ng-hide.nsg, .ng-hide.bzar, .ng-hide.michaelPollack, .ng-hide.starCity, .ng-hide.lyfebank, .ng-hide.projectTest {
-  width: 10000px; }
-
-.projectTabs.ng-show, .ng-show.trendingSounds, .ng-show.mattRobinson, .ng-show.nsg, .ng-show.bzar, .ng-show.michaelPollack, .ng-show.starCity, .ng-show.lyfebank, .ng-show.projectTest {
-  width: 10px; }
-
 .projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .projectTest #projectName {
   width: 50%;
   color: white; }
@@ -667,4 +699,18 @@ body {
     float: left;
     display: block;
     margin-left: 20px;
-    padding: 10px; }
+    padding: 10px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease; }
+
+#navHome {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  opacity: 0; }
+
+#navHome .ng-hide {
+  opacity: 1; }

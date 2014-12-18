@@ -447,12 +447,6 @@
   .projectTabs:hover img, .trendingSounds:hover img, .mattRobinson:hover img, .nsg:hover img, .bzar:hover img, .michaelPollack:hover img, .starCity:hover img, .lyfebank:hover img, .projectTest:hover img {
     right: 10px; }
 
-.projectTabs.ng-hide, .ng-hide.trendingSounds, .ng-hide.mattRobinson, .ng-hide.nsg, .ng-hide.bzar, .ng-hide.michaelPollack, .ng-hide.starCity, .ng-hide.lyfebank, .ng-hide.projectTest {
-  width: 10000px; }
-
-.projectTabs.ng-show, .ng-show.trendingSounds, .ng-show.mattRobinson, .ng-show.nsg, .ng-show.bzar, .ng-show.michaelPollack, .ng-show.starCity, .ng-show.lyfebank, .ng-show.projectTest {
-  width: 10px; }
-
 .projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .projectTest #projectName {
   width: 50%;
   color: white; }

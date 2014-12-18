@@ -14,8 +14,13 @@
         <div id="myNav" role="navigation" ng-controller="NavController">
 						<div id="navContainer">
 								<ul>
-									<li><a ng-click="gotoProtfolio()">Protfolio</a></li>
-                  <li><a href="#">Resume</a></li>                  
+                  <li id="navHome" ng-hide="isHome">
+                      <a ng-click="gotoHome()">
+                       <img src="Images/profile.png" alt="Alec Robins Profile" width="22px"/>
+                     </a>
+                  </li>
+                  <li><a ng-click="gotoProtfolio()">Protfolio</a></li>
+                  <li><a href="#">Resume</a></li>
                   <li><a ng-click="gotoContact()">Contact</a></li>
 								</ul>
 						</div>

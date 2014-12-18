@@ -35,5 +35,45 @@ h1, h2, h3
 		font-size: 1.5em
 
 #homeProfile
-	display: table
-	margin: 0 auto
+	position: relative
+	height: 147px
+
+#homeProfile img
+	position: absolute
+	left: 50%
+	margin-left: -75px
+	z-index: 99999
+	-webkit-transition: left 1s ease
+	-moz-transition: left 1s ease
+	-o-transition: left 1s ease
+	-ms-transition: left 1s ease
+
+#homeProfile #homeInfo
+	background: rgba(216,216,216,0.85)
+	width: 0px
+	height: 147px
+	position: absolute
+	left: 50%
+	border-radius: 0px 10px 10px 0px
+	-moz-border-radius: 0px 10px 10px 0px
+	-webkit-border-radius: 0px 10px 10px 0px
+	border: 0px solid #000000
+	overflow: hidden
+	padding: 15px 15px 15px 100px
+	opacity: 0
+	font-size: 16px
+	z-index: 999
+	box-shadow: 0 0 15px rgb(60,60,60)
+	-webkit-transition: all 1s ease
+	-moz-transition: all 1s ease
+	-o-transition: all 1s ease
+	-ms-transition: all 1s ease
+
+
+#homeProfile:hover
+	img
+		left: 20%
+	#homeInfo
+		left: 20%
+		width: 70%
+		opacity: 1
