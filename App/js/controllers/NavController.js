@@ -7,12 +7,14 @@ function ($scope, $location, $rootScope) {
 
       var contactAnimation = {
         "home": "slideDown",
+        "about": "slideDown",
         "protfolio": "slideDown",
         "contact": "slideUp"
       };
 
       var defaultAnimation = {
         "home": "slideRight",
+        "about": "slideRight",
         "protfolio": "slideLeft",
         "contact": "slideUp"
       };
@@ -29,6 +31,15 @@ function ($scope, $location, $rootScope) {
           return $location.path() == '/';
       };
 
+
+      //show about when clicked
+      $scope.showAbout = function () {
+
+        if($rootScope.aboutClick == null)
+            $rootScope.aboutClick = "aboutClass";
+        else
+            $rootScope.aboutClick = null;
+      }
 
 	//nav links
     $scope.go = function (path, pageAnimationClass) {

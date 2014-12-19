@@ -12,10 +12,31 @@ $base: "http://localhost:8000/AlecRobins/"
 	padding-bottom: 20px
 
 .projectMainImage
-	height: 50vh
+	//max-height: 50vh
+	max-height: 50vh
 	width: 100%
+	min-height: auto
 	background-size: cover
 	background-repeat: no-repeat
+	overflow: hidden
+
+// Image Slide Animation
+.imageSlide
+	opacity: 1
+	display: block
+	left: 0
+	img
+		width: 100%
+
+.imageSlide.ng-hide-add.ng-hide-add-active,
+.imageSlide.ng-hide-remove.ng-hide-remove-active
+	-webkit-transition: all 1s ease
+	-moz-transition: all 1s ease
+	-o-transition: all 1s ease
+	-ms-transition: all 1s ease
+
+.imageSlide.ng-hide
+	opacity: 0.5
 
 .projectInfo
 	padding-top: 10px
@@ -86,40 +107,3 @@ $base: "http://localhost:8000/AlecRobins/"
 
 #starcity .projectLink a
 	background-color: rgb(42,116,199)
-
-// Backgrounds for Main Image
-
-#trendingMainImage
-	background: url($base + 'Images/Freelance/TrendingSounds/main.jpg') center top
-	background-size: 100%
-	background-repeat: no-repeat
-
-#robinsonImage
-	background: url($base + 'Images/Freelance/MattRobinson/home.png') center top
-	background-size: 100%
-	background-repeat: no-repeat
-
-#nsgImage
-	background: url($base + 'Images/Freelance/NSG/home.png') center top
-	background-size: 100%
-	background-repeat: no-repeat
-
-#pollackImage
-	background: url($base + 'Images/Freelance/Pollack/home.png') center top
-	background-size: 100%
-	background-repeat: no-repeat
-
-#bzarImage
-	background: url($base + 'Images/Freelance/Bzar/home.png') center top
-	background-size: 100%
-	background-repeat: no-repeat
-
-#starcityImage
-	background: url($base + 'Images/Freelance/StarCity/home.png') center top
-	background-size: 100%
-	background-repeat: no-repeat
-
-#lyfebankImage
-	background: url($base + 'Images/Freelance/LyfeBank/home.png') center top
-	background-size: 100%
-	background-repeat: no-repeat

@@ -5,10 +5,29 @@
   padding-bottom: 20px; }
 
 .projectMainImage {
-  height: 50vh;
+  max-height: 50vh;
   width: 100%;
+  min-height: auto;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+.imageSlide {
+  opacity: 1;
+  display: block;
+  left: 0; }
+  .imageSlide img {
+    width: 100%; }
+
+.imageSlide.ng-hide-add.ng-hide-add-active,
+.imageSlide.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease; }
+
+.imageSlide.ng-hide {
+  opacity: 0.5; }
 
 .projectInfo {
   padding-top: 10px;
@@ -75,41 +94,6 @@
 
 #starcity .projectLink a {
   background-color: #2a74c7; }
-
-#trendingMainImage {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance/TrendingSounds/main.jpg") center top;
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
-#robinsonImage {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance/MattRobinson/home.png") center top;
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
-#nsgImage {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance/NSG/home.png") center top;
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
-#pollackImage {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance/Pollack/home.png") center top;
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
-#bzarImage {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance/Bzar/home.png") center top;
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
-#starcityImage {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance/StarCity/home.png") center top;
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
-#lyfebankImage {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance/LyfeBank/home.png") center top;
-  background-size: 100%;
-  background-repeat: no-repeat; }
 
 .projectIcons {
   max-width: 4em;
@@ -451,7 +435,7 @@
   -moz-transition: border-left 0.2s ease, width 1.2s ease;
   -o-transition: border-left 0.2s ease, width 1.2s ease;
   -ms-transition: border-left 0.2s ease, width 1.2s ease; }
-  .projectTabs img, .trendingSounds img, .mattRobinson img, .nsg img, .bzar img, .michaelPollack img, .starCity img, .lyfebank img, .projectTest img {
+  .projectTabs #arrow, .trendingSounds #arrow, .mattRobinson #arrow, .nsg #arrow, .bzar #arrow, .michaelPollack #arrow, .starCity #arrow, .lyfebank #arrow, .projectTest #arrow {
     position: absolute;
     right: 20px;
     top: 45%;
@@ -460,7 +444,7 @@
     -o-transition: right 0.2s ease;
     -ms-transition: right 0.2s ease; }
   @media (max-width: 992px) {
-    .projectTabs img, .trendingSounds img, .mattRobinson img, .nsg img, .bzar img, .michaelPollack img, .starCity img, .lyfebank img, .projectTest img {
+    .projectTabs #arrow, .trendingSounds #arrow, .mattRobinson #arrow, .nsg #arrow, .bzar #arrow, .michaelPollack #arrow, .starCity #arrow, .lyfebank #arrow, .projectTest #arrow {
       -ms-transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
@@ -468,16 +452,16 @@
 
 .projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .projectTest:hover {
   border-left: solid 10px #191919; }
-  .projectTabs:hover img, .trendingSounds:hover img, .mattRobinson:hover img, .nsg:hover img, .bzar:hover img, .michaelPollack:hover img, .starCity:hover img, .lyfebank:hover img, .projectTest:hover img {
+  .projectTabs:hover #arrow, .trendingSounds:hover #arrow, .mattRobinson:hover #arrow, .nsg:hover #arrow, .bzar:hover #arrow, .michaelPollack:hover #arrow, .starCity:hover #arrow, .lyfebank:hover #arrow, .projectTest:hover #arrow {
     right: 10px; }
   @media (max-width: 992px) {
     .projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .projectTest:hover {
       border-left: none; }
-      .projectTabs:hover img, .trendingSounds:hover img, .mattRobinson:hover img, .nsg:hover img, .bzar:hover img, .michaelPollack:hover img, .starCity:hover img, .lyfebank:hover img, .projectTest:hover img {
+      .projectTabs:hover #arrow, .trendingSounds:hover #arrow, .mattRobinson:hover #arrow, .nsg:hover #arrow, .bzar:hover #arrow, .michaelPollack:hover #arrow, .starCity:hover #arrow, .lyfebank:hover #arrow, .projectTest:hover #arrow {
         right: 20px; } }
 
 .projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .projectTest #projectName {
-  width: 50%;
+  width: 58%;
   color: white; }
   .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .projectTest #projectName h1 {
     font-size: 28px; }
@@ -575,3 +559,8 @@
 .mobileShow.ng-hide {
   opacity: 0;
   height: 0px; }
+
+.arrowClicked {
+  -ms-transform: rotate(-90deg) !important;
+  -webkit-transform: rotate(-90deg) !important;
+  transform: rotate(-90deg) !important; }

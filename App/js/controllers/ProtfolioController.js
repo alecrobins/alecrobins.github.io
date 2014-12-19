@@ -11,6 +11,7 @@ function ($scope, $window) {
 		$scope.showFreelance = true; // default to show freelance
 		$scope.showProjects = false; //don't show projects
 
+
 		$scope.freelanceSelect = function() {
 			if($scope.showFreelance){
 				return "clNavSelected"; //return the selected class
@@ -49,6 +50,7 @@ function ($scope, $window) {
 					"class": "trendingSounds",
 					"images": ["Images/Freelance-Bg/bg-trending.jpg"],
 					"selected": false, //used to show/hide projects in mobile mode
+					"arrowClass": null, //helps animate the arrow when clicked
 					"link": function (){ projectLink(this);}
 				},
 				{ "name": "Matt Robinson Tunes",
@@ -56,13 +58,7 @@ function ($scope, $window) {
 					"url": "Templates/freelance/robinson.html",
 					"class": "mattRobinson",
 					"selected": false,
-					"link": function (){ projectLink(this);}
-				},
-				{ "name": "Nashville Social Group",
-					"date": "Summer 2013",
-					"url": "Templates/freelance/nsg.html",
-					"class": "nsg",
-					"selected": false,
+					"arrowClass": null, //helps animate the arrow when clicked
 					"link": function (){ projectLink(this);}
 				},
 				{ "name": "bzar",
@@ -70,6 +66,15 @@ function ($scope, $window) {
 					"url": "Templates/freelance/bzar.html",
 					"class": "bzar",
 					"selected": false,
+					"arrowClass": null, //helps animate the arrow when clicked
+					"link": function (){ projectLink(this);}
+				},
+				{ "name": "Nashville Social Group",
+					"date": "Summer 2013",
+					"url": "Templates/freelance/nsg.html",
+					"class": "nsg",
+					"selected": false,
+					"arrowClass": null, //helps animate the arrow when clicked
 					"link": function (){ projectLink(this);}
 				},
 				{ "name": "Michael Pollack Music",
@@ -77,6 +82,7 @@ function ($scope, $window) {
 					"url": "Templates/freelance/michaelPollack.html",
 					"class": "michaelPollack",
 					"selected": false,
+					"arrowClass": null, //helps animate the arrow when clicked
 					"link": function (){ projectLink(this);}
 				},
 				{ "name": "Star City Inn & Suites",
@@ -84,6 +90,7 @@ function ($scope, $window) {
 					"url": "Templates/freelance/starCity.html",
 					"class": "starCity",
 					"selected": false,
+					"arrowClass": null, //helps animate the arrow when clicked
 					"link": function (){ projectLink(this);}
 				},
 				{ "name": "LyfeBank Ohio",
@@ -91,6 +98,7 @@ function ($scope, $window) {
 					"url": "Templates/freelance/lyfebank.html",
 					"class": "lyfebank",
 					"selected": false,
+					"arrowClass": null, //helps animate the arrow when clicked
 					"link": function (){ projectLink(this);}
 				},
 			];
@@ -104,6 +112,7 @@ function ($scope, $window) {
 				"url": "Templates/projects/project1.html",
 				"class": "projectTest",
 				"selected": false,
+				"arrowClass": null, //helps animate the arrow when clicked
 				"link": function (){ projectLink(this); }
 			},
 			// Trending Sounds Project
@@ -112,9 +121,125 @@ function ($scope, $window) {
 				"url": "Templates/projects/project1.html",
 				"class": "projectTest",
 				"selected": false,
+				"arrowClass": null, //helps animate the arrow when clicked
 				"link": function (){ projectLink(this); }
 			}
 		];
+
+
+		// list of images for the different projects
+
+		$scope.gotoNextImage = function (project, index)
+		{
+			console.log(project);
+			console.log(index);
+			project[index].visible = false;
+			index = (index + 1) % project.length;
+			project[index].visible = true;
+		}
+
+			//BZAR images
+		$scope.bzarImages = [
+			{
+				 "src": "Images/Freelance/Bzar/home.png",
+				"visible": true,
+				"index": 0
+			},
+			{
+				"src": "Images/Freelance/Bzar/about.png",
+				"visible": false,
+				"index": 1
+			},
+			{
+				"src": "Images/Freelance/Bzar/faq.png",
+				"visible": false,
+				"index": 2
+			}
+		];
+
+		//BZAR images
+		$scope.bzarImages = [
+		{
+			"src": "Images/Freelance/Bzar/home.png",
+			"visible": true,
+			"index": 0
+		},
+		{
+			"src": "Images/Freelance/Bzar/about.png",
+			"visible": false,
+			"index": 1
+		},
+		{
+			"src": "Images/Freelance/Bzar/faq.png",
+			"visible": false,
+			"index": 2
+		}
+		];
+
+		//Trending images
+		$scope.trendingImages = [
+		{
+			"src": "Images/Freelance/TrendingSounds/home.jpg",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+		//LyfeBank images
+		$scope.lyfebankImages = [
+		{
+			"src": "Images/Freelance/LyfeBank/home.png",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+		//MattRobinson images
+		$scope.robinsonImages = [
+		{
+			"src": "Images/Freelance/MattRobinson/home.png",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+		//NSG images
+		$scope.nsgImages = [
+		{
+			"src": "Images/Freelance/NSG/home.png",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+		//NSG images
+		$scope.nsgImages = [
+		{
+			"src": "Images/Freelance/NSG/home.png",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+		//NSG images
+		$scope.pollackImages = [
+		{
+			"src": "Images/Freelance/Pollack/home.png",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+		//StarCity images
+		$scope.starcityImages = [
+		{
+			"src": "Images/Freelance/StarCity/home.png",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+
 
 		//HELPER FUNCTIONS
 			// set the current project to the project selected
@@ -123,6 +248,14 @@ function ($scope, $window) {
 
 					// only set project selected when widht is less than the breaking point
 					if($window.innerWidth < breakPoint)
+					{
 						project.selected = !project.selected; // swap
+
+						if(project.arrowClass == null)
+							 project.arrowClass = "arrowClicked";
+						else
+							project.arrowClass = null;
+
+					}
 			};
 }]);

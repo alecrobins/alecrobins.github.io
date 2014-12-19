@@ -2,6 +2,9 @@
 
 	<div class="projectWrap">
 		<div class="projectMainImage" id="nsgImage">
+			<div class="imageSlide" ng-repeat="image in nsgImages" ng-show="image.visible">
+				<img ng-src="{{image.src}}" />
+			</div>
 		</div>
 
 		<div class="projectInfo">

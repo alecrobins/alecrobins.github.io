@@ -23,3 +23,8 @@ app.config(['$routeProvider', function ($routeProvider) {
           redirectTo: '/'
         });
 }]);
+
+app.run(function($rootScope)
+{
+  $rootScope.aboutClicked = null;
+});

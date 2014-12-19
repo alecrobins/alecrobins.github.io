@@ -146,7 +146,7 @@ $base: "http://localhost:8000/AlecRobins/"
 	-moz-transition: border-left 0.2s ease, width 1.2s ease
 	-o-transition: border-left 0.2s ease, width 1.2s ease
 	-ms-transition: border-left 0.2s ease, width 1.2s ease
-	img
+	#arrow
 		position: absolute
 		right: 20px
 		top: 45%
@@ -155,7 +155,7 @@ $base: "http://localhost:8000/AlecRobins/"
 		-o-transition: right 0.2s ease
 		-ms-transition: right 0.2s ease
 	@media (max-width: 992px)
-		img
+		#arrow
 			-ms-transform: rotate(90deg)
 			-webkit-transform: rotate(90deg)
 			transform: rotate(90deg)
@@ -164,17 +164,17 @@ $base: "http://localhost:8000/AlecRobins/"
 	//project tabs animations
 .projectTabs:hover
 	border-left: solid 10px rgb(25,25,25)
-	img
+	#arrow
 		right: 10px
 	@media (max-width: 992px)
 		border-left: none
-		img
+		#arrow
 			right: 20px
 
 	//Titles for the projects
 		// flush left, white font
 .projectTabs #projectName
-	width: 50%
+	width: 58%
 	color: white
 	h1
 		font-size: 28px
@@ -291,3 +291,9 @@ $base: "http://localhost:8000/AlecRobins/"
 .mobileShow.ng-hide
 	opacity: 0
 	height: 0px
+
+// animation for arrow when clicked
+.arrowClicked
+	-ms-transform: rotate(-90deg) !important
+	-webkit-transform: rotate(-90deg) !important
+	transform: rotate(-90deg) !important

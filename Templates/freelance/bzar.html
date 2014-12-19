@@ -1,7 +1,9 @@
 <div class="projectContainer" id="bzar">
-
 	<div class="projectWrap">
 		<div class="projectMainImage" id="bzarImage">
+				<div class="imageSlide" ng-repeat="image in bzarImages" ng-show="image.visible">
+					<img ng-src="{{image.src}}" /> <!-- TODO: ng-click="gotoNextImage(bzarImages, image.index)" -->
+				</div>
 		</div>
 
 		<div class="projectInfo">

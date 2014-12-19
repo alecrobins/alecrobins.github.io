@@ -29,11 +29,11 @@ h1, h2, h3
 		color: white
 		font-size: 1.5em
 
-#homeProfile
+.homeProfile
 	position: relative
 	height: 147px
 
-#homeProfile img
+.homeProfile img
 	position: absolute
 	left: 50%
 	margin-left: -75px
@@ -43,7 +43,7 @@ h1, h2, h3
 	-o-transition: left 1s ease
 	-ms-transition: left 1s ease
 
-#homeProfile #homeInfo
+.homeProfile #homeInfo
 	background: rgba(216,216,216,0.85)
 	width: 0px
 	height: 147px
@@ -69,8 +69,8 @@ h1, h2, h3
 	width: 70% !important
 	opacity: 1 !important
 
-#homeProfile:hover
+.homeProfile:hover, #aboutClass
 	img
-		left: 20%
+		left: 20% !important
 	#homeInfo
 		@extend .about
