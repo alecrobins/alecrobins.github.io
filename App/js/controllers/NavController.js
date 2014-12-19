@@ -1,23 +1,65 @@
 'use strict';
 
-var navController = angular.module("app").controller('NavController', ['$scope', '$location',
-function ($scope, $location) {
+var navController = angular.module("app").controller('NavController', ['$scope', '$location', '$rootScope',
+function ($scope, $location, $rootScope) {
 
-      // used to add the class to the rollover when about clicked
-      $scope.aboutClass = null;
+      // used to dynamically change the slide animations between pages
+
+      var contactAnimation = {
+        "home": "slideDown",
+        "protfolio": "slideDown",
+        "contact": "slideUp"
+      };
+
+      var defaultAnimation = {
+        "home": "slideRight",
+        "protfolio": "slideLeft",
+        "contact": "slideUp"
+      };
+
+      $scope.slide = {
+        "home": "slideRight",
+        "protfolio": "slideLeft",
+        "contact": "slideUp"
+      };
 
       // used to determine if the user is on/off the home page
-      $scope.isHome = $location.path() == '/';
+      $scope.isHome = function () {
+
+          return $location.path() == '/';
+      };
+
 
 	//nav links
-      $scope.gotoProtfolio = function () {
-          $scope.isHome = false;
-          $location.path("/protfolio");
-      };
+    $scope.go = function (path, pageAnimationClass) {
 
-      $scope.gotoHome = function () {
-          $scope.isHome = true;
-          $location.path("/");
-      };
+      if (typeof(pageAnimationClass) === 'undefined')
+      { // Use a default, your choice
+        $rootScope.pageAnimationClass = 'crossFade';
+      }
+      else
+      { // Use the specified animation
+        $rootScope.pageAnimationClass = pageAnimationClass;
+      }
+
+      if (path === 'back') { // Allow a 'back' keyword to go to previous page
+        $window.history.back();
+      }
+      else { // Go to the specified path
+
+        // check if contact to change the animations
+        if(path == '/contact')
+          {
+            $scope.slide = contactAnimation;
+          }
+        else
+          {
+            $scope.slide = defaultAnimation;
+          }
+
+        $location.path(path);
+      }
+    };
+
 
 }]);

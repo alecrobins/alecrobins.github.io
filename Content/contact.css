@@ -1,0 +1,58 @@
+.contactContainer {
+  background: rgba(15, 15, 15, 0.7);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative; }
+
+#contactLeft {
+  display: block;
+  height: 100vh;
+  padding-top: 80px;
+  color: white;
+  margin: 0 auto;
+  width: 300px;
+  position: relative; }
+  #contactLeft h1 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 42px;
+    display: inline-block; }
+  #contactLeft h2 a {
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    display: block; }
+  #contactLeft #navIcons ul {
+    margin: 0 auto;
+    display: inline-block; }
+  #contactLeft #navIcons ul li {
+    margin-bottom: 100px;
+    float: left;
+    margin-right: 30px; }
+    #contactLeft #navIcons ul li h3 {
+      font-size: 20px;
+      float: left; }
+    #contactLeft #navIcons ul li img {
+      width: 35px;
+      display: block; }
+
+#contactRight {
+  display: block;
+  height: 100vh;
+  padding-top: 100px;
+  padding-right: 40px; }
+  #contactRight #form {
+    float: right; }
+  #contactRight h1 {
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px; }
+  #contactRight #subject {
+    min-width: 400px;
+    max-width: 600px; }
+  #contactRight input {
+    margin-bottom: 20px; }

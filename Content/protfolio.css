@@ -326,6 +326,9 @@
 .devicon-zend-plain.colored {
   color: #68b604; }
 
+.page2 {
+  box-shadow: 0 0 10px black; }
+
 #protfolioContainer {
   background: #fbfbfb;
   width: 100%;

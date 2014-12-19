@@ -13,19 +13,38 @@
 			  <!--navbar - NavController resposible for the following content-->
         <div id="myNav" role="navigation" ng-controller="NavController">
 						<div id="navContainer">
+
 								<ul>
                   <li >
-                      <a ng-click="go('/', 'slideRight')" id="navHome" ng-hide="isHome">
+                      <a ng-click="go('/', slide.home)" id="navHome" ng-hide="isHome()">
                        <img src="Images/profile.png" alt="Alec Robins Profile" width="22px"/>
                      </a>
                   </li>
-                  <li><a ng-click="go('/', 'slideRight')">About</a></li>
-                  <li><a ng-click="go('/protfolio', 'slideLeft')">Protfolio</a></li>
+                  <li><a ng-click="go('/protfolio', slide.protfolio)">Protfolio</a></li>
                   <li><a href="Documents/AlecRobinsResume.pdf" target="_blank">Resume</a></li>
-                  <li><a ng-click="gotoContact()">Contact</a></li>
+                  <li><a ng-click="go('/contact', slide.contact)">Contact</a></li>
 								</ul>
+
+                <div id="navIcons">
+                  <ul>
+                    <li>
+                      <img src="Images/icon-github.png" alt="Alec Robins Git Hub account" width="22px"/>
+                    </li>
+
+                    <li>
+                      <img src="Images/icon-linkedin.png" alt="Alec Robins LinkedIn account" width="22px"/>
+                    </li>
+
+                    <li>
+                      <img src="Images/icon-rss.png" alt="Alec Robins Blog" width="22px"/>
+                    </li>
+
+                  </ul>
+                </div>
+
 						</div>
-        </div>
+
+      </div>
 
 <!-- the view will swap out home/portfolio/contact views -->
        <div class="page-view" ng-class="pageAnimationClass" ng-view></div>
@@ -42,7 +61,8 @@
         <!-- Controllers -->
         <script src="App/js/controllers/HomeController.js"></script>
 				<script src="App/js/controllers/NavController.js"></script>
-				<script src="App/js/controllers/ProtfolioController.js"></script>
+        <script src="App/js/controllers/ProtfolioController.js"></script>
+        <script src="App/js/controllers/ContactController.js"></script>
 
 
 

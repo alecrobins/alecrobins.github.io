@@ -45,14 +45,6 @@ h1, h2, h3 {
   display: block;
   padding: 1vh 0; }
 
-#homeContainer {
-  background: url(http://localhost:8000/AlecRobins/Images/bg.jpg);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: 50% 20%;
-  position: absolute; }
-
 #homeMain {
   position: absolute;
   width: 66%;
@@ -442,6 +434,9 @@ h1, h2, h3 {
 .devicon-zend-plain.colored {
   color: #68b604; }
 
+.page2 {
+  box-shadow: 0 0 10px black; }
+
 #protfolioContainer {
   background: #fbfbfb;
   width: 100%;
@@ -635,6 +630,65 @@ h1, h2, h3 {
 .rightAnimate.ng-leave.ng-leave-active {
   left: 100vw; }
 
+.contactContainer {
+  background: rgba(15, 15, 15, 0.7);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative; }
+
+#contactLeft {
+  display: block;
+  height: 100vh;
+  padding-top: 80px;
+  color: white;
+  margin: 0 auto;
+  width: 300px;
+  position: relative; }
+  #contactLeft h1 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 42px;
+    display: inline-block; }
+  #contactLeft h2 a {
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    display: block; }
+  #contactLeft #navIcons ul {
+    margin: 0 auto;
+    display: inline-block; }
+  #contactLeft #navIcons ul li {
+    margin-bottom: 100px;
+    float: left;
+    margin-right: 30px; }
+    #contactLeft #navIcons ul li h3 {
+      font-size: 20px;
+      float: left; }
+    #contactLeft #navIcons ul li img {
+      width: 35px;
+      display: block; }
+
+#contactRight {
+  display: block;
+  height: 100vh;
+  padding-top: 100px;
+  padding-right: 40px; }
+  #contactRight #form {
+    float: right; }
+  #contactRight h1 {
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px; }
+  #contactRight #subject {
+    min-width: 400px;
+    max-width: 600px; }
+  #contactRight input {
+    margin-bottom: 20px; }
+
 /* slide in from the bottom
 @keyframes slideOutLeft {
 	to 		{ transform: translateX(-100%); }
@@ -679,6 +733,13 @@ body {
   background-color: #191919;
   color: white; }
 
+body {
+  background: url(http://localhost:8000/AlecRobins/Images/bg.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .clear {
   clear: both; }
 
@@ -687,7 +748,7 @@ body {
   top: 0;
   width: 100%;
   height: 40px;
-  background-color: #191919;
+  background-color: #0f0f0f;
   box-shadow: 0 0 5px #191919;
   z-index: 1; }
   #navContainer li a {
@@ -711,12 +772,21 @@ body {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease; }
+  #navContainer #navIcons {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    #navContainer #navIcons li {
+      background-color: inherit; }
+    #navContainer #navIcons li:hover img {
+      width: 24px;
+      margin-top: -2px; }
 
 #navHome {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
+  -webkit-transition: all 0.5s 0.8s ease;
+  -moz-transition: all 0.5s 0.8s ease;
+  -o-transition: all 0.5s 0.8s ease;
+  -ms-transition: all 0.5s 0.8s ease;
   opacity: 0;
   width: 0px; }
 
@@ -727,11 +797,11 @@ body {
 
 #navHome.ng-hide-add.ng-hide-add-active,
 #navHome.ng-hide-remove.ng-hide-remove-active {
-  transition: all 0.5s 0s ease;
-  -webkit-transition: all 0.5s 0s ease;
-  -moz-transition: all 0.5s 0s ease;
-  -o-transition: all 0.5s 0s ease;
-  -ms-transition: all 0.5s 0s ease; }
+  transition: all 0.5s 0.8s ease;
+  -webkit-transition: all 0.5s 0.8s ease;
+  -moz-transition: all 0.5s 0.8s ease;
+  -o-transition: all 0.5s 0.8s ease;
+  -ms-transition: all 0.5s 0.8s ease; }
 
 #navHome.ng-hide, #navHome.ng-hide-add.ng-hide-add-active,
 #navHome.ng-hide-remove {
