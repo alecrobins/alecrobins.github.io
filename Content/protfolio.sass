@@ -80,6 +80,9 @@ $base: "http://localhost:8000/AlecRobins/"
 	overflow-y: scroll
 	overflow-x: hidden
 	background-color: rgb(232,232,232)
+	/*hide if in mobile mode*/
+	@media (max-width: 992px)
+		display: none
 
 #projectsContainerOut
 	height: 70vh
@@ -87,11 +90,21 @@ $base: "http://localhost:8000/AlecRobins/"
 	position: absolute
 	width: 100%
 	overflow: hidden
+	/*hide if in mobile mode*/
+	@media (max-width: 992px)
+		position: relative
+		overflow: auto
+		height: auto
+		top: 0
 
 #projectsContainerIn
 	height: 100%
 	overflow-y: auto
 	overflow-x: hidden
+	@media (max-width: 992px)
+		position: relative
+		overflow: auto
+
 
 // Project Specific CSS
 	// "Project" represents both freelance and projects
@@ -123,7 +136,7 @@ $base: "http://localhost:8000/AlecRobins/"
 .projectTabs
 	position: relative
 	display: block
-	height: 130px
+	min-height: 130px
 	width: 100%
 	margin: 0 !important
 	padding: 10px 20px
@@ -141,12 +154,22 @@ $base: "http://localhost:8000/AlecRobins/"
 		-moz-transition: right 0.2s ease
 		-o-transition: right 0.2s ease
 		-ms-transition: right 0.2s ease
+	@media (max-width: 992px)
+		img
+			-ms-transform: rotate(90deg)
+			-webkit-transform: rotate(90deg)
+			transform: rotate(90deg)
+			top: 50px
 
 	//project tabs animations
 .projectTabs:hover
 	border-left: solid 10px rgb(25,25,25)
 	img
 		right: 10px
+	@media (max-width: 992px)
+		border-left: none
+		img
+			right: 20px
 
 	//Titles for the projects
 		// flush left, white font
@@ -155,12 +178,16 @@ $base: "http://localhost:8000/AlecRobins/"
 	color: white
 	h1
 		font-size: 28px
+		@media (max-width: 992px)
+			font-size: 24px
 	h2
 		display: block
 		font-size: 20px
 		font-weight: 300
 		position: absolute
 		bottom: 10px
+		@media (max-width: 992px)
+			font-size: 16px
 
 ////FREELANCE WORK
 	//Trending Sounds
@@ -239,3 +266,28 @@ $base: "http://localhost:8000/AlecRobins/"
 
 .rightAnimate.ng-leave.ng-leave-active
 	left: 100vw
+
+
+/// Mobile
+
+.mobileShow
+	opacity: 1
+	background-color: rgb(232,232,232)
+	width: 100vw !important
+	margin-left: -20px
+	margin-top: 40px
+	display: block
+	height: auto
+	.projectContainer
+		padding-top: 0 !important
+
+.mobileShow.ng-hide-add.ng-hide-add-active,
+.mobileShow.ng-hide-remove.ng-hide-remove-active
+	-webkit-transition: all 1s ease
+	-moz-transition: all 1s ease
+	-o-transition: all 1s ease
+	-ms-transition: all 1s ease
+
+.mobileShow.ng-hide
+	opacity: 0
+	height: 0px

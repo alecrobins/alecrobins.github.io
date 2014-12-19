@@ -44,13 +44,16 @@
 												<div ng-click="site.link()" >
 														<div id="projectName">
 																<h1>{{site.name}}</h1>
-																<h2>{{site.date}}</h2>
+																<h2 ng-hide="site.selected">{{site.date}}</h2>
 														</div>
 														<img src="Images/arrow.png" alt="arrow" />
 												</div>
+
+												<!--Following part will only be shown when screen size is small -->
+												<div class="mobileShow" ng-include="site.url" ng-show="site.selected"></div>
 										</div>
 
-									</div>
+								</div>
 
 								<!-- List of freelance work -->
 								<div class="tabWrapper" ng-hide="showFreelance">
@@ -61,6 +64,10 @@
 														<h2>{{project.date}}</h2>
 													</div>
 											</div>
+
+											<!--Following part will only be shown when screen size is small -->
+											<div class="mobileShow" ng-include="site.url" ></div>
+
 									</div>
 
 								</div>

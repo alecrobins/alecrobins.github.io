@@ -493,19 +493,34 @@ h1, h2, h3 {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #e8e8e8; }
+  background-color: #e8e8e8;
+  /*hide if in mobile mode */ }
+  @media (max-width: 992px) {
+    #containerRight {
+      display: none; } }
 
 #projectsContainerOut {
   height: 70vh;
   top: 30vh;
   position: absolute;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  /*hide if in mobile mode */ }
+  @media (max-width: 992px) {
+    #projectsContainerOut {
+      position: relative;
+      overflow: auto;
+      height: auto;
+      top: 0; } }
 
 #projectsContainerIn {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden; }
+  @media (max-width: 992px) {
+    #projectsContainerIn {
+      position: relative;
+      overflow: auto; } }
 
 .tabWrapper, .tabWrapper.ng-hide-add,
 .tabWrapper.ng-hide-remove.ng-hide-remove-active {
@@ -534,7 +549,7 @@ h1, h2, h3 {
 .projectTabs, .trendingSounds, .mattRobinson, .nsg, .bzar, .michaelPollack, .starCity, .lyfebank, .projectTest {
   position: relative;
   display: block;
-  height: 130px;
+  min-height: 130px;
   width: 100%;
   margin: 0 !important;
   padding: 10px 20px;
@@ -552,23 +567,40 @@ h1, h2, h3 {
     -moz-transition: right 0.2s ease;
     -o-transition: right 0.2s ease;
     -ms-transition: right 0.2s ease; }
+  @media (max-width: 992px) {
+    .projectTabs img, .trendingSounds img, .mattRobinson img, .nsg img, .bzar img, .michaelPollack img, .starCity img, .lyfebank img, .projectTest img {
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+      top: 50px; } }
 
 .projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .projectTest:hover {
   border-left: solid 10px #191919; }
   .projectTabs:hover img, .trendingSounds:hover img, .mattRobinson:hover img, .nsg:hover img, .bzar:hover img, .michaelPollack:hover img, .starCity:hover img, .lyfebank:hover img, .projectTest:hover img {
     right: 10px; }
+  @media (max-width: 992px) {
+    .projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .projectTest:hover {
+      border-left: none; }
+      .projectTabs:hover img, .trendingSounds:hover img, .mattRobinson:hover img, .nsg:hover img, .bzar:hover img, .michaelPollack:hover img, .starCity:hover img, .lyfebank:hover img, .projectTest:hover img {
+        right: 20px; } }
 
 .projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .projectTest #projectName {
   width: 50%;
   color: white; }
   .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .projectTest #projectName h1 {
     font-size: 28px; }
+    @media (max-width: 992px) {
+      .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .projectTest #projectName h1 {
+        font-size: 24px; } }
   .projectTabs #projectName h2, .trendingSounds #projectName h2, .mattRobinson #projectName h2, .nsg #projectName h2, .bzar #projectName h2, .michaelPollack #projectName h2, .starCity #projectName h2, .lyfebank #projectName h2, .projectTest #projectName h2 {
     display: block;
     font-size: 20px;
     font-weight: 300;
     position: absolute;
     bottom: 10px; }
+    @media (max-width: 992px) {
+      .projectTabs #projectName h2, .trendingSounds #projectName h2, .mattRobinson #projectName h2, .nsg #projectName h2, .bzar #projectName h2, .michaelPollack #projectName h2, .starCity #projectName h2, .lyfebank #projectName h2, .projectTest #projectName h2 {
+        font-size: 16px; } }
 
 .trendingSounds {
   background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-trending.jpg") no-repeat center; }
@@ -629,6 +661,28 @@ h1, h2, h3 {
 
 .rightAnimate.ng-leave.ng-leave-active {
   left: 100vw; }
+
+.mobileShow {
+  opacity: 1;
+  background-color: #e8e8e8;
+  width: 100vw !important;
+  margin-left: -20px;
+  margin-top: 40px;
+  display: block;
+  height: auto; }
+  .mobileShow .projectContainer {
+    padding-top: 0 !important; }
+
+.mobileShow.ng-hide-add.ng-hide-add-active,
+.mobileShow.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease; }
+
+.mobileShow.ng-hide {
+  opacity: 0;
+  height: 0px; }
 
 .contactContainer {
   background: rgba(15, 15, 15, 0.7);
