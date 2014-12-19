@@ -569,7 +569,7 @@ h1, h2, h3 {
         right: 20px; } }
 
 .projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .projectTest #projectName {
-  width: 58%;
+  width: 56%;
   color: white; }
   .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .projectTest #projectName h1 {
     font-size: 28px; }
