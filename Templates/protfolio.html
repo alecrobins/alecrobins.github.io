@@ -40,8 +40,8 @@
 									<!-- List of freelance work -->
 									<div class="tabWrapper" ng-show="showFreelance">
 
-										<div ng-repeat="site in freelance" ng-class="site.class" >
-												<div ng-click="site.link()" >
+										<div ng-repeat="site in freelance" ng-class="site.class" ng-click="site.link()" >
+												<div >
 														<div id="projectName">
 																<h1>{{site.name}}</h1>
 																<h2 ng-hide="site.selected">{{site.date}}</h2>
