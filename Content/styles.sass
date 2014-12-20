@@ -14,6 +14,8 @@
 
 $main-color: rgb(25,25,25)
 $font: 'Roboto', sans-serif
+//base url
+$base: "http://www.alecrobins.me/"
 
 *
 	font-family: $font !important
@@ -24,7 +26,7 @@ body
 	color: white
 
 body
-	background: url(#{$assets_path}/Images/bg.jpg) no-repeat center top fixed
+	background: url($base + '/Images/bg.jpg') no-repeat center top fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
