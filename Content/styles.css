@@ -443,7 +443,7 @@ h1, h2, h3 {
   padding-left: 0 !important;
   padding-right: 0 !important; }
   #containerLeft #cLNav ul li {
-    display: table-cell;
+    display: block;
     float: left;
     margin-left: 10px;
     margin-top: 5px; }
@@ -458,14 +458,14 @@ h1, h2, h3 {
 
 .clNavNotSelected h3 a {
   color: #cfcfcf;
-  font-weight: 500;
-  font-size: 36px;
+  font-weight: 300;
+  font-size: 32px;
   text-align: bottom; }
 .clNavNotSelected h3 a:hover {
   text-decoration: none;
   color: #969696;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
