@@ -527,8 +527,7 @@ h1, h2, h3 {
 
 .tabWrapper.ng-hide, .tabWrapper.ng-hide-add.ng-hide-add-active,
 .tabWrapper.ng-hide-remove {
-  margin-left: -1000px;
-  background-color: red; }
+  margin-left: -1000px; }
 
 .projectTabs, .trendingSounds, .mattRobinson, .nsg, .bzar, .michaelPollack, .starCity, .lyfebank, .projectTest {
   position: relative;
@@ -539,6 +538,8 @@ h1, h2, h3 {
   padding: 10px 20px;
   border-left: solid 0px #191919;
   background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-transition: border-left 0.2s ease, width 1.2s ease;
   -moz-transition: border-left 0.2s ease, width 1.2s ease;
   -o-transition: border-left 0.2s ease, width 1.2s ease;
@@ -587,25 +588,25 @@ h1, h2, h3 {
         font-size: 16px; } }
 
 .trendingSounds {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-trending.jpg") no-repeat center; }
+  background-image: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-trending.jpg"); }
 
 .mattRobinson {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-robinson.jpg") no-repeat center; }
+  background-image: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-robinson.jpg"); }
 
 .nsg {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-nsg.jpg") no-repeat center; }
+  background-image: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-nsg.jpg"); }
 
 .bzar {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-bzar.jpg") no-repeat center; }
+  background-image: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-bzar.jpg"); }
 
 .michaelPollack {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-pollack.jpg") no-repeat center; }
+  background-image: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-pollack.jpg"); }
 
 .starCity {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-starcity.jpg") no-repeat center; }
+  background-image: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-starcity.jpg"); }
 
 .lyfebank {
-  background: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-lyfebank.jpg") no-repeat center; }
+  background-image: url("http://localhost:8000/AlecRobins/Images/Freelance-Bg/bg-lyfebank.jpg"); }
 
 .projectTest {
   background: #646464; }
