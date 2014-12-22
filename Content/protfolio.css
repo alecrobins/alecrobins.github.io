@@ -427,7 +427,7 @@
 .tabWrapper.ng-hide-remove {
   margin-left: -1000px; }
 
-.projectTabs, .trendingSounds, .mattRobinson, .nsg, .bzar, .michaelPollack, .starCity, .lyfebank, .projectTest {
+.projectTabs, .trendingSounds, .mattRobinson, .nsg, .bzar, .michaelPollack, .starCity, .lyfebank, .urlShortner, .bst, .movieJouranl {
   position: relative;
   display: block;
   min-height: 130px;
@@ -442,7 +442,7 @@
   -moz-transition: border-left 0.2s ease, width 1.2s ease;
   -o-transition: border-left 0.2s ease, width 1.2s ease;
   -ms-transition: border-left 0.2s ease, width 1.2s ease; }
-  .projectTabs #arrow, .trendingSounds #arrow, .mattRobinson #arrow, .nsg #arrow, .bzar #arrow, .michaelPollack #arrow, .starCity #arrow, .lyfebank #arrow, .projectTest #arrow {
+  .projectTabs #arrow, .trendingSounds #arrow, .mattRobinson #arrow, .nsg #arrow, .bzar #arrow, .michaelPollack #arrow, .starCity #arrow, .lyfebank #arrow, .urlShortner #arrow, .bst #arrow, .movieJouranl #arrow {
     position: absolute;
     right: 20px;
     top: 45%;
@@ -451,38 +451,38 @@
     -o-transition: right 0.2s ease;
     -ms-transition: right 0.2s ease; }
   @media (max-width: 992px) {
-    .projectTabs #arrow, .trendingSounds #arrow, .mattRobinson #arrow, .nsg #arrow, .bzar #arrow, .michaelPollack #arrow, .starCity #arrow, .lyfebank #arrow, .projectTest #arrow {
+    .projectTabs #arrow, .trendingSounds #arrow, .mattRobinson #arrow, .nsg #arrow, .bzar #arrow, .michaelPollack #arrow, .starCity #arrow, .lyfebank #arrow, .urlShortner #arrow, .bst #arrow, .movieJouranl #arrow {
       -ms-transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
       top: 50px; } }
 
-.projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .projectTest:hover {
+.projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .urlShortner:hover, .bst:hover, .movieJouranl:hover {
   border-left: solid 10px #191919; }
-  .projectTabs:hover #arrow, .trendingSounds:hover #arrow, .mattRobinson:hover #arrow, .nsg:hover #arrow, .bzar:hover #arrow, .michaelPollack:hover #arrow, .starCity:hover #arrow, .lyfebank:hover #arrow, .projectTest:hover #arrow {
+  .projectTabs:hover #arrow, .trendingSounds:hover #arrow, .mattRobinson:hover #arrow, .nsg:hover #arrow, .bzar:hover #arrow, .michaelPollack:hover #arrow, .starCity:hover #arrow, .lyfebank:hover #arrow, .urlShortner:hover #arrow, .bst:hover #arrow, .movieJouranl:hover #arrow {
     right: 10px; }
   @media (max-width: 992px) {
-    .projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .projectTest:hover {
+    .projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .urlShortner:hover, .bst:hover, .movieJouranl:hover {
       border-left: none; }
-      .projectTabs:hover #arrow, .trendingSounds:hover #arrow, .mattRobinson:hover #arrow, .nsg:hover #arrow, .bzar:hover #arrow, .michaelPollack:hover #arrow, .starCity:hover #arrow, .lyfebank:hover #arrow, .projectTest:hover #arrow {
+      .projectTabs:hover #arrow, .trendingSounds:hover #arrow, .mattRobinson:hover #arrow, .nsg:hover #arrow, .bzar:hover #arrow, .michaelPollack:hover #arrow, .starCity:hover #arrow, .lyfebank:hover #arrow, .urlShortner:hover #arrow, .bst:hover #arrow, .movieJouranl:hover #arrow {
         right: 20px; } }
 
-.projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .projectTest #projectName {
+.projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .urlShortner #projectName, .bst #projectName, .movieJouranl #projectName {
   width: 56%;
   color: white; }
-  .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .projectTest #projectName h1 {
+  .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .urlShortner #projectName h1, .bst #projectName h1, .movieJouranl #projectName h1 {
     font-size: 28px; }
     @media (max-width: 992px) {
-      .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .projectTest #projectName h1 {
+      .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .urlShortner #projectName h1, .bst #projectName h1, .movieJouranl #projectName h1 {
         font-size: 24px; } }
-  .projectTabs #projectName h2, .trendingSounds #projectName h2, .mattRobinson #projectName h2, .nsg #projectName h2, .bzar #projectName h2, .michaelPollack #projectName h2, .starCity #projectName h2, .lyfebank #projectName h2, .projectTest #projectName h2 {
+  .projectTabs #projectName h2, .trendingSounds #projectName h2, .mattRobinson #projectName h2, .nsg #projectName h2, .bzar #projectName h2, .michaelPollack #projectName h2, .starCity #projectName h2, .lyfebank #projectName h2, .urlShortner #projectName h2, .bst #projectName h2, .movieJouranl #projectName h2 {
     display: block;
     font-size: 20px;
     font-weight: 300;
     position: absolute;
     bottom: 10px; }
     @media (max-width: 992px) {
-      .projectTabs #projectName h2, .trendingSounds #projectName h2, .mattRobinson #projectName h2, .nsg #projectName h2, .bzar #projectName h2, .michaelPollack #projectName h2, .starCity #projectName h2, .lyfebank #projectName h2, .projectTest #projectName h2 {
+      .projectTabs #projectName h2, .trendingSounds #projectName h2, .mattRobinson #projectName h2, .nsg #projectName h2, .bzar #projectName h2, .michaelPollack #projectName h2, .starCity #projectName h2, .lyfebank #projectName h2, .urlShortner #projectName h2, .bst #projectName h2, .movieJouranl #projectName h2 {
         font-size: 16px; } }
 
 .trendingSounds {
@@ -506,8 +506,14 @@
 .lyfebank {
   background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-lyfebank.jpg"); }
 
-.projectTest {
-  background: #646464; }
+.urlShortner {
+  background: #09a1cd; }
+
+.bst {
+  background-image: url("http://www.alecrobins.me/Images/Project-Bg/bst.jpg"); }
+
+.movieJouranl {
+  background-image: url("http://www.alecrobins.me/Images/Project-Bg/movieJournal.jpg"); }
 
 .rightAnimate {
   left: 0;

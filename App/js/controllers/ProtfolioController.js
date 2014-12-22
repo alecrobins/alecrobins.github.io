@@ -35,7 +35,7 @@ function ($scope, $window) {
 
 			//reset default loaded projects
 			if($scope.showProjects){
-				$scope.currentProject = "Templates/projects/project1.html";
+				$scope.currentProject = "Templates/projects/urlshortner.html";
 			}else{
 				$scope.currentProject = "Templates/freelance/trendingSounds.html";
 			}
@@ -106,20 +106,29 @@ function ($scope, $window) {
 		//list of all my projects
 		$scope.projects =
 		[
-			// Trending Sounds Project
-			{ "name": "Project 1",
-				"date": "Summer 2014",
-				"url": "Templates/projects/project1.html",
-				"class": "projectTest",
+			// Url Shortner Project
+			{ "name": "Url Shortner",
+				"date": "Present",
+				"url": "Templates/projects/urlshortner.html",
+				"class": "urlShortner",
 				"selected": false,
 				"arrowClass": null, //helps animate the arrow when clicked
 				"link": function (){ projectLink(this); }
 			},
-			// Trending Sounds Project
-			{ "name": "Project 2",
-				"date": "Summer 2014",
-				"url": "Templates/projects/project1.html",
-				"class": "projectTest",
+			// MovieJournal.me
+			{ "name": "Movie Journal",
+				"date": "Present",
+				"url": "Templates/projects/movieJournal.html",
+				"class": "movieJournal",
+				"selected": false,
+				"arrowClass": null, //helps animate the arrow when clicked
+				"link": function (){ projectLink(this); }
+			},
+			// MovieJournal.me
+			{ "name": "Bexley Senior Tag",
+				"date": "Spring 2012",
+				"url": "Templates/projects/bst.html",
+				"class": "bst",
 				"selected": false,
 				"arrowClass": null, //helps animate the arrow when clicked
 				"link": function (){ projectLink(this); }
@@ -234,6 +243,26 @@ function ($scope, $window) {
 		$scope.starcityImages = [
 		{
 			"src": "Images/Freelance/StarCity/home.png",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+	////Projects
+
+		//Movie Journal
+		$scope.movieImages = [
+		{
+			"src": "Images/Project/MovieJournal/home.jpg",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+		//Bexley Senior Tag
+		$scope.bstImages = [
+		{
+			"src": "Images/Project/BST/home.jpg",
 			"visible": true,
 			"index": 0
 		}
