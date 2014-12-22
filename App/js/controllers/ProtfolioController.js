@@ -133,6 +133,15 @@ function ($scope, $window) {
 				"arrowClass": null, //helps animate the arrow when clicked
 				"link": function (){ projectLink(this); }
 			},
+			// Safe Auto
+			{ "name": "Safe Auto: Dashboard",
+				"date": "Summer Intern 2014",
+				"url": "Templates/projects/safeAuto.html",
+				"class": "safeAuto",
+				"selected": false,
+				"arrowClass": null, //helps animate the arrow when clicked
+				"link": function (){ projectLink(this); }
+			},
 			// BST
 			{ "name": "Bexley Senior Tag",
 				"date": "Spring 2012",
@@ -291,6 +300,15 @@ function ($scope, $window) {
 		$scope.personalSiteImages = [
 		{
 			"src": "Images/Project/PersonalSite/home.jpg",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+		//Safe Auto
+		$scope.safeAutoImages = [
+		{
+			"src": "Images/Project/SafeAuto/home.jpg",
 			"visible": true,
 			"index": 0
 		}

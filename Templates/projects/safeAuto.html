@@ -1,0 +1,31 @@
+<div class="projectContainer">
+
+	<div class="projectWrap">
+		<div class="projectMainImage" id="safeAutoImage">
+			<div class="imageSlide" ng-repeat="image in safeAutoImages" ng-show="image.visible">
+				<img ng-src="{{image.src}}" />
+			</div>
+		</div>
+
+		<div class="projectInfo">
+			<h1>Safe Auto: <br />Dashboard</h1>
+			<p>
+				During my internship at Safe Auto, my role was to extend the functionalities of the internal monitoring dashboard web app by building a robust platform to improve its data collection, efficiency and extensibility. Before arriving, there was no way to off load data gathered by the dashboard and the data being gathered was done so inefficiently. I improved upon the dashboard by extending its features (admin controls) and implemented a new process for data collection using an enterprise service bus called NServiceBus. The technology I used to build upon the dashboard was HTML5, CSS3, AngularJs, NServiceBus, Asp.Net, and SignalR.
+			</p>
+
+			<div class="clear">
+			</div>
+
+			<div class="projectTech">
+				<h2>Technologies</h2>
+
+				<div class="projectIcons" id="html5" ng-include="'Content/icons/icons/html5/html5-plain-wordmark.svg'"></div>
+				<div class="projectIcons" id="css3" ng-include="'Content/icons/icons/css3/css3-plain-wordmark.svg'"></div>
+				<div class="projectIcons" id="wordpress" ng-include="'Content/icons/icons/angularjs/angularjs-plain.svg'"></div>
+				<div class="projectIcons" id="wordpress" ng-include="'Content/icons/icons/dot-net/dot-net-plain-wordmark.svg'"></div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
