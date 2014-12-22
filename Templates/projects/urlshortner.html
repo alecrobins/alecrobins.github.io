@@ -2,7 +2,9 @@
 
 	<div class="projectWrap">
 		<div class="projectMainImage">
-			<img src="" alt="" />
+			<div class="imageSlide" ng-repeat="image in urlshortnerImages" ng-show="image.visible">
+				<img ng-src="{{image.src}}" /> <!-- TODO: ng-click="gotoNextImage(bzarImages, image.index)" -->
+			</div>
 		</div>
 
 		<div class="projectInfo">
@@ -11,14 +13,23 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies eleifend blandit. Nam lacinia orci a ex aliquet, quis facilisis urna.
 			</p>
 
-			<div class="projectLink">
-				Visit <a href="#">www.trendingsounds.com</a>
+			<div class="githubLink">
+				<a href="https://github.com/alecrobins/urlShortner" target="_blank">
+					View Source Code
+				</a>
+			</div>
+
+			<div class="clear">
 			</div>
 
 			<div class="projectTech">
+				<h2>Technologies</h2>
+
+				<div class="projectIcons" id="html5" ng-include="'Content/icons/icons/html5/html5-plain-wordmark.svg'"></div>
+				<div class="projectIcons" id="css3" ng-include="'Content/icons/icons/css3/css3-plain-wordmark.svg'"></div>
+				<div class="projectIcons" id="rails" ng-include="'Content/icons/icons/rails/rails-plain-wordmark.svg'"></div>
 
 			</div>
-
 		</div>
 	</div>
 

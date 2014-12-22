@@ -108,7 +108,7 @@ function ($scope, $window) {
 		[
 			// Url Shortner Project
 			{ "name": "Url Shortner",
-				"date": "Current Project",
+				"date": "Active Project",
 				"url": "Templates/projects/urlshortner.html",
 				"class": "urlShortner",
 				"selected": false,
@@ -117,7 +117,7 @@ function ($scope, $window) {
 			},
 			// MovieJournal.me
 			{ "name": "Movie Journal",
-				"date": "Current Project",
+				"date": "Active Project",
 				"url": "Templates/projects/movieJournal.html",
 				"class": "movieJournal",
 				"selected": false,
@@ -268,6 +268,14 @@ function ($scope, $window) {
 		}
 		];
 
+		//Bexley Senior Tag
+		$scope.urlshortnerImages = [
+		{
+			"src": "Images/Project/UrlShortner/home.jpg",
+			"visible": true,
+			"index": 0
+		}
+		];
 
 
 		//HELPER FUNCTIONS

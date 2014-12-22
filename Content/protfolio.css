@@ -469,7 +469,7 @@
         right: 20px; } }
 
 .projectTabs #projectName, .trendingSounds #projectName, .mattRobinson #projectName, .nsg #projectName, .bzar #projectName, .michaelPollack #projectName, .starCity #projectName, .lyfebank #projectName, .urlShortner #projectName, .bst #projectName, .movieJournal #projectName {
-  width: 56%;
+  width: 50%;
   color: white; }
   .projectTabs #projectName h1, .trendingSounds #projectName h1, .mattRobinson #projectName h1, .nsg #projectName h1, .bzar #projectName h1, .michaelPollack #projectName h1, .starCity #projectName h1, .lyfebank #projectName h1, .urlShortner #projectName h1, .bst #projectName h1, .movieJournal #projectName h1 {
     font-size: 28px; }
@@ -508,7 +508,7 @@
   background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-lyfebank.jpg"); }
 
 .urlShortner {
-  background: #09a1cd; }
+  background-image: url("http://www.alecrobins.me/Images/Project-Bg/urlShortner.jpg"); }
 
 .bst {
   background-image: url("http://www.alecrobins.me/Images/Project-Bg/bst.jpg"); }
