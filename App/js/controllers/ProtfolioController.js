@@ -108,7 +108,7 @@ function ($scope, $window) {
 		[
 			// Url Shortner Project
 			{ "name": "Url Shortner",
-				"date": "Present",
+				"date": "Current Project",
 				"url": "Templates/projects/urlshortner.html",
 				"class": "urlShortner",
 				"selected": false,
@@ -117,7 +117,7 @@ function ($scope, $window) {
 			},
 			// MovieJournal.me
 			{ "name": "Movie Journal",
-				"date": "Present",
+				"date": "Current Project",
 				"url": "Templates/projects/movieJournal.html",
 				"class": "movieJournal",
 				"selected": false,
