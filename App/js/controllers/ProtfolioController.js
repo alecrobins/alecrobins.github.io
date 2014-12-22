@@ -124,7 +124,16 @@ function ($scope, $window) {
 				"arrowClass": null, //helps animate the arrow when clicked
 				"link": function (){ projectLink(this); }
 			},
-			// MovieJournal.me
+			// Personal Site
+			{ "name": "Personal Site",
+				"date": "Winter 2014",
+				"url": "Templates/projects/personalSite.html",
+				"class": "personalSite",
+				"selected": false,
+				"arrowClass": null, //helps animate the arrow when clicked
+				"link": function (){ projectLink(this); }
+			},
+			// BST
 			{ "name": "Bexley Senior Tag",
 				"date": "Spring 2012",
 				"url": "Templates/projects/bst.html",
@@ -272,6 +281,16 @@ function ($scope, $window) {
 		$scope.urlshortnerImages = [
 		{
 			"src": "Images/Project/UrlShortner/home.jpg",
+			"visible": true,
+			"index": 0
+		}
+		];
+
+
+		//Personal Site
+		$scope.personalSiteImages = [
+		{
+			"src": "Images/Project/PersonalSite/home.jpg",
 			"visible": true,
 			"index": 0
 		}
