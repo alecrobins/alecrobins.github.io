@@ -31,12 +31,23 @@
     margin-bottom: 100px;
     float: left;
     margin-right: 30px; }
+    #contactLeft #navIcons ul li img {
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease; }
     #contactLeft #navIcons ul li h3 {
       font-size: 20px;
       float: left; }
     #contactLeft #navIcons ul li img {
       width: 35px;
       display: block; }
+  #contactLeft #navIcons ul li:hover img {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1); }
 
 #contactRight {
   display: block;

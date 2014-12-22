@@ -53,12 +53,12 @@
   transition: all 0.2s ease; }
 
 .projectLink a {
-  background-image: url("http://localhost:8000/AlecRobins/Images/bg-link.png");
+  background-image: url("http://www.alecrobins.me/Images/bg-link.png");
   background-size: 15px;
   margin-right: 10px; }
 
 .githubLink a {
-  background-image: url("http://localhost:8000/AlecRobins/Images/bg-github.png");
+  background-image: url("http://www.alecrobins.me/Images/bg-github.png");
   background-size: 20px;
   background-color: #0a0a0a; }
 
@@ -335,10 +335,16 @@
   padding-left: 0 !important;
   padding-right: 0 !important; }
   #containerLeft #cLNav ul li {
-    display: block;
+    display: inline-block;
     float: left;
     margin-left: 10px;
     margin-top: 5px; }
+  #containerLeft #cLNav #slash h4 {
+    font-size: 40px;
+    display: inline-block;
+    padding: 3px 0px;
+    font-weight: 300;
+    opacity: 0.5; }
 
 .clNavSelected h3 a {
   color: #191919;
@@ -351,7 +357,7 @@
 .clNavNotSelected h3 a {
   color: #cfcfcf;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 36px;
   text-align: bottom; }
 .clNavNotSelected h3 a:hover {
   text-decoration: none;
