@@ -382,8 +382,8 @@
       display: none; } }
 
 #projectsContainerOut {
-  height: 70vh;
-  top: 30vh;
+  height: 65vh;
+  top: 35vh;
   position: absolute;
   width: 100%;
   overflow: hidden;

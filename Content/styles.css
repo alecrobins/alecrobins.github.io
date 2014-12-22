@@ -97,6 +97,9 @@ h1, h2, h3 {
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease; }
+  @media (max-width: 992px) {
+    .homeProfile #homeInfo {
+      display: none; } }
 
 .about, .homeProfile:hover #homeInfo, #aboutClass #homeInfo {
   left: 20% !important;
@@ -105,6 +108,9 @@ h1, h2, h3 {
 
 .homeProfile:hover img, #aboutClass img {
   left: 20% !important; }
+  @media (max-width: 992px) {
+    .homeProfile:hover img, #aboutClass img {
+      left: 50% !important; } }
 
 .projectContainer {
   overflow-x: hidden;
@@ -490,8 +496,8 @@ h1, h2, h3 {
       display: none; } }
 
 #projectsContainerOut {
-  height: 70vh;
-  top: 30vh;
+  height: 65vh;
+  top: 35vh;
   position: absolute;
   width: 100%;
   overflow: hidden;

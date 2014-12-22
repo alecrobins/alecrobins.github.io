@@ -63,6 +63,8 @@ h1, h2, h3
 	-moz-transition: all 1s ease
 	-o-transition: all 1s ease
 	-ms-transition: all 1s ease
+	@media (max-width: 992px)
+		display: none
 
 .about
 	left: 20% !important
@@ -72,5 +74,7 @@ h1, h2, h3
 .homeProfile:hover, #aboutClass
 	img
 		left: 20% !important
+		@media (max-width: 992px)
+			left: 50% !important
 	#homeInfo
 		@extend .about
