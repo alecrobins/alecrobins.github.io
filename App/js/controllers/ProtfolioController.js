@@ -87,7 +87,7 @@ function ($scope, $window) {
 				},
 				{ "name": "Star City Inn & Suites",
 					"date": "Summer 2013",
-					"url": "Templates/freelance/starCity.html",
+					"url": "Templates/freelance/starcity.html",
 					"class": "starCity",
 					"selected": false,
 					"arrowClass": null, //helps animate the arrow when clicked
