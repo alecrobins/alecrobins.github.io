@@ -35,7 +35,7 @@ function ($scope, $window) {
 
 			//reset default loaded projects
 			if($scope.showProjects){
-				$scope.currentProject = "Templates/projects/urlshortner.html";
+				$scope.currentProject = $scope.projects[0].url;
 			}else{
 				$scope.currentProject = "Templates/freelance/trendingSounds.html";
 			}
@@ -116,7 +116,7 @@ function ($scope, $window) {
 				"link": function (){ projectLink(this); }
 			},
 			// Url Shortner Project
-			{ "name": "Url Shortner",
+			{ "name": "Url Shortener",
 				"date": "Winter 2014",
 				"url": "Templates/projects/urlshortner.html",
 				"class": "urlShortner",
