@@ -106,20 +106,20 @@ function ($scope, $window) {
 		//list of all my projects
 		$scope.projects =
 		[
-			// Url Shortner Project
-			{ "name": "Url Shortner",
-				"date": "Active Project",
-				"url": "Templates/projects/urlshortner.html",
-				"class": "urlShortner",
-				"selected": false,
-				"arrowClass": null, //helps animate the arrow when clicked
-				"link": function (){ projectLink(this); }
-			},
 			// MovieJournal.me
 			{ "name": "Movie Journal",
 				"date": "Active Project",
 				"url": "Templates/projects/movieJournal.html",
 				"class": "movieJournal",
+				"selected": false,
+				"arrowClass": null, //helps animate the arrow when clicked
+				"link": function (){ projectLink(this); }
+			},
+			// Url Shortner Project
+			{ "name": "Url Shortner",
+				"date": "Winter 2014",
+				"url": "Templates/projects/urlshortner.html",
+				"class": "urlShortner",
 				"selected": false,
 				"arrowClass": null, //helps animate the arrow when clicked
 				"link": function (){ projectLink(this); }
