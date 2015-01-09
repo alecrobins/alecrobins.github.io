@@ -123,24 +123,26 @@ $base: "http://www.alecrobins.me/"
 .tabWrapper.ng-hide-remove.ng-hide-remove-active
 	width: 100%
 	margin-left: 0
+	// float left solves the issue of animation not showing up
+	float: left
 
 .tabWrapper.ng-hide-add.ng-hide-add-active
-	transition: margin-left 1.2s 0s ease
-	-webkit-transition: margin-left 1.2s 0s ease
-	-moz-transition: margin-left 1.2s 0s ease
-	-o-transition: margin-left 1.2s 0s ease
-	-ms-transition: margin-left 1.2s 0s ease
+	transition: all 1.2s 0s ease
+	-webkit-transition: all 1.2s 0s ease
+	-moz-transition: all 1.2s 0s ease
+	-o-transition: all 1.2s 0s ease
+	-ms-transition: all 1.2s 0s ease
 
 .tabWrapper.ng-hide-remove.ng-hide-remove-active
-	transition: margin-left 1.2s 1s ease
-	-webkit-transition: margin-left 1.2s 1s ease
-	-moz-transition: margin-left 1.2s 1s ease
-	-o-transition: margin-left 1.2s 1s ease
-	-ms-transition: margin-left 1.2s 1s ease
+	transition: all 1.2s 1.5s ease
+	-webkit-transition: all 1.2s 1s ease
+	-moz-transition: all 1.2s 1s ease
+	-o-transition: all 1.2s 1s ease
+	-ms-transition: all 1.2s 1s ease
 
 .tabWrapper.ng-hide, .tabWrapper.ng-hide-add.ng-hide-add-active,
 .tabWrapper.ng-hide-remove
-	margin-left: -1000px
+	margin-left: -100vw
 
 .projectTabs
 	position: relative
@@ -265,7 +267,6 @@ $base: "http://www.alecrobins.me/"
 
 
 //// animations for projects
-// TODO: un comment when in production
 .rightAnimate
 	left: 0
 	position: absolute
