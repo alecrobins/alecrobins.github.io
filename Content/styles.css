@@ -435,19 +435,23 @@ h1, h2, h3 {
   position: absolute; }
 
 #clInfo {
-  padding-left: 15px; }
+  padding-left: 15px;
+  display: table-row;
+  height: 0px; }
 
 #cLFreelanceIntro {
   padding: 0 15px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin-bottom: 15px; }
 
 #containerLeft {
-  display: block;
+  display: table;
   height: 100vh;
   background-color: #fbfbfb;
   padding-top: 40px;
   padding-left: 0 !important;
-  padding-right: 0 !important; }
+  padding-right: 0 !important;
+  overflow: hidden; }
   #containerLeft #cLNav ul li {
     display: inline-block;
     float: left;
@@ -496,11 +500,10 @@ h1, h2, h3 {
       display: none; } }
 
 #projectsContainerOut {
-  height: 65vh;
-  top: 35vh;
-  position: absolute;
+  height: auto;
+  display: table-row;
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   background-color: #c8c8c8;
   /*hide if in mobile mode */ }
   @media (max-width: 992px) {

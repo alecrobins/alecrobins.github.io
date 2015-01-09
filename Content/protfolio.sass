@@ -27,18 +27,22 @@ $base: "http://www.alecrobins.me/"
 
 #clInfo
 	padding-left: 15px
+	display: table-row
+	height: 0px
 
 #cLFreelanceIntro
 	padding: 0 15px
 	line-height: 24px
+	margin-bottom: 15px
 
 #containerLeft
-	display: block
+	display: table
 	height: 100vh
 	background-color: rgb(251,251,251)
 	padding-top: 40px
 	padding-left: 0 !important
 	padding-right: 0 !important
+	overflow: hidden
 	#cLNav ul li
 		display: inline-block
 		float: left
@@ -90,11 +94,10 @@ $base: "http://www.alecrobins.me/"
 		display: none
 
 #projectsContainerOut
-	height: 65vh
-	top: 35vh
-	position: absolute
+	height: auto
+	display: table-row
 	width: 100%
-	overflow: hidden
+	overflow: scroll
 	background-color: rgb(200,200,200)
 
 	/*hide if in mobile mode*/
