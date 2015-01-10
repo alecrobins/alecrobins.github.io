@@ -394,6 +394,7 @@
   /*hide if in mobile mode */ }
   @media (max-width: 992px) {
     #projectsContainerOut {
+      display: block;
       position: relative;
       overflow: auto;
       height: auto;
