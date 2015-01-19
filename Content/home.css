@@ -6,7 +6,8 @@ h1, h2, h3 {
   position: absolute;
   width: 66%;
   left: 17.5%;
-  top: 20%; }
+  top: 20%;
+  padding-bottom: 40px; }
   #homeMain h1 {
     font-weight: 500;
     color: white;

@@ -49,7 +49,8 @@ h1, h2, h3 {
   position: absolute;
   width: 66%;
   left: 17.5%;
-  top: 20%; }
+  top: 20%;
+  padding-bottom: 40px; }
   #homeMain h1 {
     font-weight: 500;
     color: white;
@@ -571,11 +572,16 @@ h1, h2, h3 {
     -o-transition: right 0.2s ease;
     -ms-transition: right 0.2s ease; }
   @media (max-width: 992px) {
-    .projectTabs #arrow, .trendingSounds #arrow, .mattRobinson #arrow, .nsg #arrow, .bzar #arrow, .michaelPollack #arrow, .starCity #arrow, .lyfebank #arrow, .urlShortner #arrow, .bst #arrow, .movieJournal #arrow, .personalSite #arrow, .safeAuto #arrow {
-      -ms-transform: rotate(90deg);
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-      top: 50px; } }
+    .projectTabs, .trendingSounds, .mattRobinson, .nsg, .bzar, .michaelPollack, .starCity, .lyfebank, .urlShortner, .bst, .movieJournal, .personalSite, .safeAuto {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 0px; }
+      .projectTabs #arrow, .trendingSounds #arrow, .mattRobinson #arrow, .nsg #arrow, .bzar #arrow, .michaelPollack #arrow, .starCity #arrow, .lyfebank #arrow, .urlShortner #arrow, .bst #arrow, .movieJournal #arrow, .personalSite #arrow, .safeAuto #arrow {
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 50px; } }
 
 .projectTabs:hover, .trendingSounds:hover, .mattRobinson:hover, .nsg:hover, .bzar:hover, .michaelPollack:hover, .starCity:hover, .lyfebank:hover, .urlShortner:hover, .bst:hover, .movieJournal:hover, .personalSite:hover, .safeAuto:hover {
   border-left: solid 10px #191919; }
@@ -843,7 +849,8 @@ body {
     text-decoration: none;
     font-weight: 300; }
   #navContainer li:hover {
-    background-color: #3c3c3c; }
+    background-color: #3c3c3c;
+    cursor: pointer; }
   #navContainer ul li {
     float: left;
     display: block;
@@ -866,7 +873,8 @@ body {
       background-color: inherit;
       margin-left: 10px; }
     #navContainer #navIcons li:hover {
-      background-color: #3c3c3c; }
+      background-color: #3c3c3c;
+      cursor: pointer; }
 
 #navHome {
   -webkit-transition: all 0.5s 0.8s ease;
