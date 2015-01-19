@@ -3,6 +3,8 @@
 var navController = angular.module("app").controller('NavController', ['$scope', '$location', '$rootScope',
 function ($scope, $location, $rootScope) {
 
+      $scope.navHeight = "40px";
+
       // used to dynamically change the slide animations between pages
 
       var contactAnimation = {
@@ -69,8 +71,19 @@ function ($scope, $location, $rootScope) {
           }
 
         $location.path(path);
+        // reset mobile animation
+        $scope.navHeight = "40px";
       }
     };
+
+  //Mobile Menu
+  $scope.mobileMenuClick = function() {
+    //swap on click
+    if($scope.navHeight == "40px")
+        $scope.navHeight = "auto";
+    else
+        $scope.navHeight = "40px";
+  }
 
 
 }]);

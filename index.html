@@ -15,19 +15,27 @@
 
 			  <!--navbar - NavController resposible for the following content-->
         <div id="myNav" role="navigation" ng-controller="NavController">
-						<div id="navContainer">
+						<div id="navContainer" ng-style="{'height': navHeight}">
 
-								<ul>
-                  <li >
-                      <a ng-click="go('/', slide.home)" id="navHome" ng-hide="isHome()">
-                       <img src="Images/profile.png" alt="Alec Robins Profile" width="22px"/>
-                     </a>
-                  </li>
-                  <!-- <li><a ng-click="showAbout(); go('/', slide.about)">About</a></li> -->
-                  <li><a ng-click="go('/protfolio', slide.protfolio)">Portfolio</a></li>
-                  <li><a href="Documents/AlecRobinsResume.pdf" target="_blank">Resume</a></li>
-                  <li><a ng-click="go('/contact', slide.contact)">Contact</a></li>
-								</ul>
+                <!--Only show when less than 480px -->
+                <div class="navMobileMenu" ng-include="'Images/menu-icon.svg'" ng-click="mobileMenuClick()"></div>
+
+                <div class="navLinks">
+  								<ul>
+                    <li id="noHover">
+                      <img src="Images/profile.png" alt="Alec Robins Profile" width="22px"/>
+                    </li>
+                    <li ng-click="go('/', slide.home)">
+                        <a  id="navHome" >
+                         Home
+                       </a>
+                    </li>
+                    <!-- <li><a ng-click="showAbout(); go('/', slide.about)">About</a></li> -->
+                    <li ng-click="go('/protfolio', slide.protfolio)"><a >Portfolio</a></li>
+                    <li><a href="Documents/AlecRobinsResume.pdf" target="_blank">Resume</a></li>
+                    <li ng-click="go('/contact', slide.contact)"><a >Contact</a></li>
+  								</ul>
+                </div>
 
                 <div id="navIcons">
                   <ul>
@@ -42,10 +50,6 @@
                         <img src="Images/icon-linkedin.png" alt="Alec Robins LinkedIn account" width="22px"/>
                       </a>
                     </li>
-
-                  <!--   <li>
-                    <img src="Images/icon-rss.png" alt="Alec Robins Blog" width="22px"/>
-                  </li> -->
 
                   </ul>
                 </div>

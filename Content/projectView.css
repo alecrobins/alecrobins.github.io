@@ -11,6 +11,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden; }
+  @media (max-width: 992px) {
+    .projectMainImage {
+      max-height: none; } }
 
 .imageSlide {
   opacity: 1;

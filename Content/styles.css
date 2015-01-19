@@ -126,6 +126,9 @@ h1, h2, h3 {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden; }
+  @media (max-width: 992px) {
+    .projectMainImage {
+      max-height: none; } }
 
 .imageSlide {
   opacity: 1;
@@ -835,6 +838,10 @@ body {
   clear: both; }
 
 #navContainer {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
   position: fixed;
   top: 0;
   width: 100%;
@@ -851,6 +858,9 @@ body {
   #navContainer li:hover {
     background-color: #3c3c3c;
     cursor: pointer; }
+  #navContainer #noHover {
+    background-color: #0f0f0f !important;
+    cursor: default; }
   #navContainer ul li {
     float: left;
     display: block;
@@ -860,11 +870,24 @@ body {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease; }
+  @media (max-width: 480px) {
+    #navContainer {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease; }
+      #navContainer ul li {
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: 0px; }
+      #navContainer ul li a {
+        width: 100%; } }
   #navContainer #navIcons {
     position: absolute;
     right: 0;
     top: 0; }
-    @media (max-width: 992px) {
+    @media (max-width: 480px) {
       #navContainer #navIcons {
         display: none; } }
     #navContainer #navIcons ul {
@@ -875,6 +898,27 @@ body {
     #navContainer #navIcons li:hover {
       background-color: #3c3c3c;
       cursor: pointer; }
+
+.navLinks {
+  float: left; }
+  @media (max-width: 480px) {
+    .navLinks {
+      width: 100%; } }
+
+.navMobileMenu {
+  display: none; }
+  @media (max-width: 480px) {
+    .navMobileMenu {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 40px; }
+      .navMobileMenu svg {
+        fill: #fafafa;
+        width: 20px;
+        position: absolute;
+        right: 10px;
+        top: 2px; } }
 
 #navHome {
   -webkit-transition: all 0.5s 0.8s ease;
