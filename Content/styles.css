@@ -838,18 +838,13 @@ body {
   clear: both; }
 
 #navContainer {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 40px;
   background-color: #0f0f0f;
   box-shadow: 0 0 5px #191919;
-  z-index: 1;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   #navContainer li a {
     display: inline-block;
     color: white;
@@ -872,10 +867,10 @@ body {
     -ms-transition: all 0.3s ease; }
   @media (max-width: 480px) {
     #navContainer {
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease; }
+      -webkit-transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease; }
       #navContainer ul li {
         width: 100%;
         padding: 10px 20px;
@@ -917,6 +912,7 @@ body {
         fill: #fafafa;
         width: 20px;
         position: absolute;
+        z-index: 99;
         right: 10px;
         top: 2px; } }
 

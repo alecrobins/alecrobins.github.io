@@ -69,10 +69,10 @@ function ($scope, $location, $rootScope) {
           {
             $scope.slide = defaultAnimation;
           }
-
-        $location.path(path);
         // reset mobile animation
         $scope.navHeight = "40px";
+        $location.path(path);
+
       }
     };
 
@@ -80,7 +80,7 @@ function ($scope, $location, $rootScope) {
   $scope.mobileMenuClick = function() {
     //swap on click
     if($scope.navHeight == "40px")
-        $scope.navHeight = "auto";
+        $scope.navHeight = "210px";
     else
         $scope.navHeight = "40px";
   }
