@@ -2,16 +2,8 @@
 @import projectView
 @import icons
 
-//media breaks
-$break-tablet-min: 768px
-$break-tablet-max: 1024
-
-$break-mobile-min: 320px
-$break-mobile-max: 568px
-
 //base url
 $base: "http://www.alecrobins.me/"
-
 
 //drop show on transition
 .page2
@@ -35,6 +27,7 @@ $base: "http://www.alecrobins.me/"
 	line-height: 24px
 	margin-bottom: 15px
 
+// Left container with intro info and tabs
 #containerLeft
 	display: table
 	height: 100vh
@@ -55,7 +48,7 @@ $base: "http://www.alecrobins.me/"
 		font-weight: 300
 		opacity: 0.5
 
-//class for selected/unselected nav buttons
+//class for selected/unselected nav buttons (Freelance|Projects)
 .clNavSelected
 	h3 a
 		color: rgb(25,25,25)
@@ -81,16 +74,16 @@ $base: "http://www.alecrobins.me/"
 		-o-transition: all 0.1s ease
 		-ms-transition: all 0.1s ease
 
+// right container holds infomation on the project
 #containerRight
-	//border-left: solid 1px rgb(25,25,25)
 	position: relative
 	display: block
 	height: 100vh
 	overflow-y: scroll
 	overflow-x: hidden
 	background-color: rgb(232,232,232)
-	/*hide if in mobile mode*/
 	@media (max-width: 992px)
+		// hide in smaller screens
 		display: none
 
 #projectsContainerOut
@@ -116,10 +109,10 @@ $base: "http://www.alecrobins.me/"
 		position: relative
 		overflow: auto
 
-
 // Project Specific CSS
 	// "Project" represents both freelance and projects
 
+// Animations for tabWrappers to slide out left and in from the right
 .tabWrapper, .tabWrapper.ng-hide-add,
 .tabWrapper.ng-hide-remove.ng-hide-remove-active
 	width: 100%
@@ -145,6 +138,7 @@ $base: "http://www.alecrobins.me/"
 .tabWrapper.ng-hide-remove
 	margin-left: -100vw
 
+// all project tabs extend this clss
 .projectTabs
 	position: relative
 	display: block
@@ -160,6 +154,8 @@ $base: "http://www.alecrobins.me/"
 	-moz-transition: border-left 0.2s ease, width 1.2s ease
 	-o-transition: border-left 0.2s ease, width 1.2s ease
 	-ms-transition: border-left 0.2s ease, width 1.2s ease
+
+	//arrow changes when in mobile mode
 	#arrow
 		position: absolute
 		right: 20px
@@ -168,19 +164,22 @@ $base: "http://www.alecrobins.me/"
 		-moz-transition: right 0.2s ease
 		-o-transition: right 0.2s ease
 		-ms-transition: right 0.2s ease
+
 	@media (max-width: 992px)
 		//override padding to fix mobile view
 		padding-top: 10px
 		padding-bottom: 10px
 		padding-left: 20px
 		padding-right: 0px
+
 		#arrow
+			//rotate the arrow
 			-ms-transform: rotate(90deg)
 			-webkit-transform: rotate(90deg)
 			transform: rotate(90deg)
 			top: 50px
 
-	//project tabs animations
+//project tabs animations
 .projectTabs:hover
 	border-left: solid 10px rgb(25,25,25)
 	#arrow
@@ -273,6 +272,7 @@ $base: "http://www.alecrobins.me/"
 
 
 //// animations for projects
+// Animate out to the right than enter in from the right
 .rightAnimate
 	left: 0
 	position: absolute
@@ -312,6 +312,7 @@ $base: "http://www.alecrobins.me/"
 
 /// Mobile
 
+// In charge of the dispaly of projects in smaller screens
 .mobileShow
 	opacity: 1
 	background-color: rgb(232,232,232)

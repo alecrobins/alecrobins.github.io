@@ -5,10 +5,6 @@ h1, h2, h3
 	display: block
 	padding: 1vh 0
 
-//makes the background photo the full page
-//#homeContainer
-
-
 //center the main content of the page
 #homeMain
 	position: absolute
@@ -34,6 +30,7 @@ h1, h2, h3
 	position: relative
 	height: 147px
 
+// Picture is layered ontop of the homeInfo
 .homeProfile img
 	position: absolute
 	left: 50%
@@ -42,8 +39,9 @@ h1, h2, h3
 	-webkit-transition: left 1s ease
 	-moz-transition: left 1s ease
 	-o-transition: left 1s ease
-	-ms-transition: left 1s ease 
+	-ms-transition: left 1s ease
 
+// HomeInfo falls behind the image
 .homeProfile #homeInfo
 	background: rgba(216,216,216,0.85)
 	width: 0px
@@ -64,7 +62,9 @@ h1, h2, h3
 	-moz-transition: all 1s ease
 	-o-transition: all 1s ease
 	-ms-transition: all 1s ease
+
 	@media (max-width: 992px)
+		// don't show about on smaller screens
 		display: none
 
 .about
@@ -72,6 +72,7 @@ h1, h2, h3
 	width: 70% !important
 	opacity: 1 !important
 
+// Animate picture to the left and show
 .homeProfile:hover, #aboutClass
 	img
 		left: 20% !important

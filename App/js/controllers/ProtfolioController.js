@@ -41,7 +41,25 @@ function ($scope, $window) {
 			}
 		}
 
-		//list of all my freelance work
+		//HELPER FUNCTIONS
+		// set the current project to the project selected
+		function projectLink(project){
+			$scope.currentProject = project.url;
+
+			// only set project selected when widht is less than the breaking point
+			if($window.innerWidth < breakPoint)
+				{
+					project.selected = !project.selected; // swap
+
+					if(project.arrowClass == null)
+						project.arrowClass = "arrowClicked";
+						else
+							project.arrowClass = null;
+				}
+			};
+
+
+		//Freelance Data
 		$scope.freelance = [
 			// Trending Sounds Project
 				{ "name": "Trending Sounds Entertainment",
@@ -103,7 +121,7 @@ function ($scope, $window) {
 				},
 			];
 
-		//list of all my projects
+		//Project Data
 		$scope.projects =
 		[
 			// MovieJournal.me
@@ -155,7 +173,7 @@ function ($scope, $window) {
 
 
 		// list of images for the different projects
-
+		//TODO: need to add image slider on projectView
 		$scope.gotoNextImage = function (project, index)
 		{
 			console.log(project);
@@ -165,25 +183,8 @@ function ($scope, $window) {
 			project[index].visible = true;
 		}
 
-			//BZAR images
-		$scope.bzarImages = [
-			{
-				 "src": "Images/Freelance/Bzar/home.png",
-				"visible": true,
-				"index": 0
-			},
-			{
-				"src": "Images/Freelance/Bzar/about.png",
-				"visible": false,
-				"index": 1
-			},
-			{
-				"src": "Images/Freelance/Bzar/faq.png",
-				"visible": false,
-				"index": 2
-			}
-		];
-
+	////Image Data
+		//TODO: eventually contain all the images for the image slider
 		//BZAR images
 		$scope.bzarImages = [
 		{
@@ -315,21 +316,5 @@ function ($scope, $window) {
 		];
 
 
-		//HELPER FUNCTIONS
-			// set the current project to the project selected
-			function projectLink(project){
-					$scope.currentProject = project.url;
 
-					// only set project selected when widht is less than the breaking point
-					if($window.innerWidth < breakPoint)
-					{
-						project.selected = !project.selected; // swap
-
-						if(project.arrowClass == null)
-							 project.arrowClass = "arrowClicked";
-						else
-							project.arrowClass = null;
-
-					}
-			};
 }]);

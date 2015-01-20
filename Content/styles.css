@@ -113,6 +113,85 @@ h1, h2, h3 {
     .homeProfile:hover img, #aboutClass img {
       left: 50% !important; } }
 
+#navContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0f0f0f;
+  box-shadow: 0 0 5px #191919;
+  overflow: hidden;
+  z-index: 1; }
+  #navContainer li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: 300; }
+  #navContainer li:hover {
+    background-color: #3c3c3c;
+    cursor: pointer; }
+  #navContainer #noHover {
+    background-color: #0f0f0f !important;
+    cursor: default; }
+  #navContainer ul li {
+    float: left;
+    display: block;
+    margin-left: 20px;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease; }
+  @media (max-width: 480px) {
+    #navContainer {
+      -webkit-transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease; }
+      #navContainer ul li {
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: 0px; }
+      #navContainer ul li a {
+        width: 100%; } }
+  #navContainer #navIcons {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    @media (max-width: 480px) {
+      #navContainer #navIcons {
+        display: none; } }
+    #navContainer #navIcons ul {
+      margin-right: 10px; }
+    #navContainer #navIcons li {
+      background-color: inherit;
+      margin-left: 10px; }
+    #navContainer #navIcons li:hover {
+      background-color: #3c3c3c;
+      cursor: pointer; }
+
+.navLinks {
+  float: left; }
+  @media (max-width: 480px) {
+    .navLinks {
+      width: 100%; } }
+
+.navMobileMenu {
+  display: none; }
+  @media (max-width: 480px) {
+    .navMobileMenu {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 40px; }
+      .navMobileMenu svg {
+        fill: #fafafa;
+        width: 20px;
+        position: absolute;
+        z-index: 99;
+        right: 10px;
+        top: 2px; } }
+
 .projectContainer {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -497,8 +576,7 @@ h1, h2, h3 {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #e8e8e8;
-  /*hide if in mobile mode */ }
+  background-color: #e8e8e8; }
   @media (max-width: 992px) {
     #containerRight {
       display: none; } }
@@ -783,42 +861,6 @@ h1, h2, h3 {
   #contactRight input {
     margin-bottom: 20px; }
 
-/* slide in from the bottom
-@keyframes slideOutLeft {
-	to 		{ transform: translateX(-100%); }
-}
-
-rotate out newspaper
-@keyframes rotateOutNewspaper {
-	to 		{ transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
-}
-
-entering animations ---------------------------------------
-scale up
-@keyframes scaleUp {
-	from 	{ opacity: 0.3; -webkit-transform: scale(0.8); }
-}
-
-slide in from the right
-@keyframes slideInRight {
-	from 	{ transform:translateX(100%); }
-	to 		{ transform: translateX(0); }
-}
-
-slide in from the bottom
-@keyframes slideInUp {
-	from 	{ transform:translateY(100%); }
-	to 		{ transform: translateY(0); }
-}
- */
-.mainView.ng-enter {
-  animation: scaleUp 0.5s both ease-in;
-  z-index: 8888; }
-
-.mainView.ng-leave {
-  animation: slideOutLeft 0.5s both ease-in;
-  z-index: 9999; }
-
 * {
   font-family: "Roboto", sans-serif !important;
   font-weight: 400; }
@@ -836,111 +878,6 @@ body {
 
 .clear {
   clear: both; }
-
-#navContainer {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #0f0f0f;
-  box-shadow: 0 0 5px #191919;
-  overflow: hidden;
-  z-index: 1; }
-  #navContainer li a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-weight: 300; }
-  #navContainer li:hover {
-    background-color: #3c3c3c;
-    cursor: pointer; }
-  #navContainer #noHover {
-    background-color: #0f0f0f !important;
-    cursor: default; }
-  #navContainer ul li {
-    float: left;
-    display: block;
-    margin-left: 20px;
-    padding: 10px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease; }
-  @media (max-width: 480px) {
-    #navContainer {
-      -webkit-transition: all 0.7s ease;
-      -moz-transition: all 0.7s ease;
-      -o-transition: all 0.7s ease;
-      -ms-transition: all 0.7s ease; }
-      #navContainer ul li {
-        width: 100%;
-        padding: 10px 20px;
-        text-align: center;
-        margin-left: 0px; }
-      #navContainer ul li a {
-        width: 100%; } }
-  #navContainer #navIcons {
-    position: absolute;
-    right: 0;
-    top: 0; }
-    @media (max-width: 480px) {
-      #navContainer #navIcons {
-        display: none; } }
-    #navContainer #navIcons ul {
-      margin-right: 10px; }
-    #navContainer #navIcons li {
-      background-color: inherit;
-      margin-left: 10px; }
-    #navContainer #navIcons li:hover {
-      background-color: #3c3c3c;
-      cursor: pointer; }
-
-.navLinks {
-  float: left; }
-  @media (max-width: 480px) {
-    .navLinks {
-      width: 100%; } }
-
-.navMobileMenu {
-  display: none; }
-  @media (max-width: 480px) {
-    .navMobileMenu {
-      display: block;
-      position: fixed;
-      width: 100%;
-      height: 40px; }
-      .navMobileMenu svg {
-        fill: #fafafa;
-        width: 20px;
-        position: absolute;
-        z-index: 99;
-        right: 10px;
-        top: 2px; } }
-
-#navHome {
-  -webkit-transition: all 0.5s 0.8s ease;
-  -moz-transition: all 0.5s 0.8s ease;
-  -o-transition: all 0.5s 0.8s ease;
-  -ms-transition: all 0.5s 0.8s ease;
-  opacity: 0;
-  width: 0px; }
-
-#navHome, #navHome.ng-hide-add,
-#navHome.ng-hide-remove.ng-hide-remove-active {
-  opacity: 1;
-  width: inherit; }
-
-#navHome.ng-hide-add.ng-hide-add-active,
-#navHome.ng-hide-remove.ng-hide-remove-active {
-  transition: all 0.5s 0.8s ease;
-  -webkit-transition: all 0.5s 0.8s ease;
-  -moz-transition: all 0.5s 0.8s ease;
-  -o-transition: all 0.5s 0.8s ease;
-  -ms-transition: all 0.5s 0.8s ease; }
-
-#navHome.ng-hide, #navHome.ng-hide-add.ng-hide-add-active,
-#navHome.ng-hide-remove {
-  opacity: 0;
-  width: 0px; }
 
 /* Transitions */
 /* Default Enter/Leave */
@@ -991,29 +928,6 @@ body {
   opacity: 1; }
 
 .ng-leave.ng-leave-active {
-  opacity: 0; }
-
-/* crossFade */
-.crossFade.ng-enter {
-  /*transition-duration */
-  -webkit-transition-duration: 100ms;
-  -moz-transition-duration: 100ms;
-  -o-transition-duration: 100ms;
-  transition-duration: 100ms;
-  opacity: 0; }
-
-.crossFade.ng-enter.ng-enter-active {
-  opacity: 1; }
-
-.crossFade.ng-leave {
-  /*transition-duration */
-  -webkit-transition-duration: 100ms;
-  -moz-transition-duration: 100ms;
-  -o-transition-duration: 100ms;
-  transition-duration: 100ms;
-  opacity: 1; }
-
-.crossFade.ng-leave.ng-leave-active {
   opacity: 0; }
 
 /* slideRight */

@@ -26,5 +26,5 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 app.run(function($rootScope)
 {
-  $rootScope.aboutClicked = null;
+  //$rootScope.aboutClicked = null;
 });

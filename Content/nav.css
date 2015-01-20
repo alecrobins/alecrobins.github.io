@@ -1,0 +1,78 @@
+#navContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0f0f0f;
+  box-shadow: 0 0 5px #191919;
+  overflow: hidden;
+  z-index: 1; }
+  #navContainer li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: 300; }
+  #navContainer li:hover {
+    background-color: #3c3c3c;
+    cursor: pointer; }
+  #navContainer #noHover {
+    background-color: #0f0f0f !important;
+    cursor: default; }
+  #navContainer ul li {
+    float: left;
+    display: block;
+    margin-left: 20px;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease; }
+  @media (max-width: 480px) {
+    #navContainer {
+      -webkit-transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease; }
+      #navContainer ul li {
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: 0px; }
+      #navContainer ul li a {
+        width: 100%; } }
+  #navContainer #navIcons {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    @media (max-width: 480px) {
+      #navContainer #navIcons {
+        display: none; } }
+    #navContainer #navIcons ul {
+      margin-right: 10px; }
+    #navContainer #navIcons li {
+      background-color: inherit;
+      margin-left: 10px; }
+    #navContainer #navIcons li:hover {
+      background-color: #3c3c3c;
+      cursor: pointer; }
+
+.navLinks {
+  float: left; }
+  @media (max-width: 480px) {
+    .navLinks {
+      width: 100%; } }
+
+.navMobileMenu {
+  display: none; }
+  @media (max-width: 480px) {
+    .navMobileMenu {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 40px; }
+      .navMobileMenu svg {
+        fill: #fafafa;
+        width: 20px;
+        position: absolute;
+        z-index: 99;
+        right: 10px;
+        top: 2px; } }

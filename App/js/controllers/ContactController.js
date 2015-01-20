@@ -23,7 +23,6 @@ function ($scope, $location, $http) {
 				console.log( $scope.form );
 
 				//TODO: validate the form before submission
-
 				$http({
 					url: 'https://api.mailgun.net/v2/sandbox7635c75f66e54869a1547a7294da46f9.mailgun.org/messages',
 					method: 'POST',
