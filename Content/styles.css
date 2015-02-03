@@ -529,9 +529,9 @@ h1, h2, h3 {
 
 @-moz-document url-prefix() {
   #containerLeft {
-    display: block;
-    height: 100%;
-    overflow: scroll; } }
+    display: block !important;
+    height: 100% !important;
+    overflow: scroll !important; } }
 
 #containerLeft {
   display: table;
