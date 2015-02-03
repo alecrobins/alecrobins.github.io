@@ -340,7 +340,12 @@
   padding-top: 40px;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  overflow: hidden; }
+  overflow: hidden;
+  @-moz-document url-prefix() {
+    display: block;
+    height: 100%;
+    overflow: auto; }
+ }
   #containerLeft #cLNav ul li {
     display: inline-block;
     float: left;

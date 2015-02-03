@@ -534,7 +534,12 @@ h1, h2, h3 {
   padding-top: 40px;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  overflow: hidden; }
+  overflow: hidden;
+  @-moz-document url-prefix() {
+    display: block;
+    height: 100%;
+    overflow: auto; }
+ }
   #containerLeft #cLNav ul li {
     display: inline-block;
     float: left;
@@ -863,11 +868,13 @@ h1, h2, h3 {
 
 * {
   font-family: "Roboto", sans-serif !important;
-  font-weight: 400; }
+  font-weight: 400;
+  height: 100%; }
 
 body {
   background-color: #191919;
-  color: white; }
+  color: white;
+  height: 100%; }
 
 body {
   background: url("http://www.alecrobins.me//Images/bg.jpg") no-repeat center top fixed;

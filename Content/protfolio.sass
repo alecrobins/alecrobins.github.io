@@ -36,6 +36,12 @@ $base: "http://www.alecrobins.me/"
 	padding-left: 0 !important
 	padding-right: 0 !important
 	overflow: hidden
+	// FIREFOX ONLY - temporary fix
+	// TODO: need to fix firefox/ie profolio rendering
+	@-moz-document url-prefix()
+		display: block
+		height: 100%
+		overflow: auto
 	#cLNav ul li
 		display: inline-block
 		float: left
