@@ -27,6 +27,11 @@ $base: "http://www.alecrobins.me/"
 	line-height: 24px
 	margin-bottom: 15px
 
+@-moz-document url-prefix()
+	#containerLeft
+		display: block
+		height: 100%
+		overflow: scroll
 // Left container with intro info and tabs
 #containerLeft
 	display: table
@@ -38,10 +43,7 @@ $base: "http://www.alecrobins.me/"
 	overflow: hidden
 	// FIREFOX ONLY - temporary fix
 	// TODO: need to fix firefox/ie profolio rendering
-	@-moz-document url-prefix()
-		display: block
-		height: 100%
-		overflow: auto
+
 	#cLNav ul li
 		display: inline-block
 		float: left
@@ -98,7 +100,8 @@ $base: "http://www.alecrobins.me/"
 	width: 100%
 	overflow: scroll
 	background-color: rgb(200,200,200)
-
+	@-moz-document url-prefix()
+		height: 100%
 	/*hide if in mobile mode*/
 	@media (max-width: 992px)
 		display: block

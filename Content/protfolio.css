@@ -333,6 +333,12 @@
   line-height: 24px;
   margin-bottom: 15px; }
 
+@-moz-document url-prefix() {
+  #containerLeft {
+    display: block;
+    height: 100%;
+    overflow: scroll; } }
+
 #containerLeft {
   display: table;
   height: 100vh;
@@ -340,12 +346,7 @@
   padding-top: 40px;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  overflow: hidden;
-  @-moz-document url-prefix() {
-    display: block;
-    height: 100%;
-    overflow: auto; }
- }
+  overflow: hidden; }
   #containerLeft #cLNav ul li {
     display: inline-block;
     float: left;
@@ -398,6 +399,9 @@
   width: 100%;
   overflow: scroll;
   background-color: #c8c8c8;
+  @-moz-document url-prefix() {
+    height: 100%; }
+
   /*hide if in mobile mode */ }
   @media (max-width: 992px) {
     #projectsContainerOut {
