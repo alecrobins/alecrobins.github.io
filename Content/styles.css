@@ -874,7 +874,7 @@ h1, h2, h3 {
   #containerLeft {
     display: block !important;
     height: 100% !important;
-    overflow: scroll !important; } }
+    overflow: auto !important; } }
 * {
   font-family: "Roboto", sans-serif !important;
   font-weight: 400; }
