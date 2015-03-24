@@ -11,7 +11,7 @@ function ($scope, $window) {
 		$scope.showFreelance = true; // default to show freelance
 		$scope.showProjects = false; //don't show projects
 
-
+		// controll the classes for the Freelance | Projects tabs
 		$scope.freelanceSelect = function() {
 			if($scope.showFreelance){
 				return "clNavSelected"; //return the selected class
@@ -20,6 +20,7 @@ function ($scope, $window) {
 			}
 		}
 
+		// controll the classes for the Freelance | Projects tabs
 		$scope.projectSelect = function() {
 			if($scope.showProjects){
 				return "clNavSelected"; //return the selected class
@@ -57,7 +58,6 @@ function ($scope, $window) {
 							project.arrowClass = null;
 				}
 			};
-
 
 		//Freelance Data
 		$scope.freelance = [
@@ -129,6 +129,15 @@ function ($scope, $window) {
 				"date": "Active Project",
 				"url": "Templates/projects/movieJournal.html",
 				"class": "movieJournal",
+				"selected": false,
+				"arrowClass": null, //helps animate the arrow when clicked
+				"link": function (){ projectLink(this); }
+			},
+			// BidEx
+			{ "name": "BidEx",
+				"date": "Spring 2015",
+				"url": "Templates/projects/bidEx.html",
+				"class": "bidEx",
 				"selected": false,
 				"arrowClass": null, //helps animate the arrow when clicked
 				"link": function (){ projectLink(this); }
@@ -249,6 +258,7 @@ function ($scope, $window) {
 		}
 		];
 
+
 		//NSG images
 		$scope.pollackImages = [
 		{
@@ -305,6 +315,16 @@ function ($scope, $window) {
 			"index": 0
 		}
 		];
+
+		//BidEx images
+		$scope.bidExImages = [
+		{
+			"src": "Images/Project/BidEx/home.jpg",
+			"visible": true,
+			"index": 0
+		}
+		];
+
 
 		//Safe Auto
 		$scope.safeAutoImages = [

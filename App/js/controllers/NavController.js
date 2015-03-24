@@ -61,6 +61,7 @@ function ($scope, $location, $rootScope) {
           }
         // reset mobile animation
         $scope.navHeight = "40px";
+        //go to the path
         $location.path(path);
 
       }

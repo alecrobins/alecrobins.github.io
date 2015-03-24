@@ -1,0 +1,38 @@
+<div class="projectContainer">
+
+	<div class="projectWrap">
+		<div class="projectMainImage">
+			<div class="imageSlide" ng-repeat="image in bidExImages" ng-show="image.visible">
+				<img ng-src="{{image.src}}" /> <!-- TODO: ng-click="gotoNextImage(bzarImages, image.index)" -->
+			</div>
+		</div>
+
+		<div class="projectInfo">
+			<h1>BidEx</h1>
+			<p>
+				This is a product built during the MasterCard Master of Code Hackathon in Hong Kong. Bidex is an online auction platform that sells experiences to the market in a more transparent and sociable way. BidEx solves the problem of bidding overpriced experience and the process of making decisions alone by improving transparency of the bidding process. Bidders can bid for any experiences they wish to purchase and the experiences will be awarded to the person who bids the highest price within a limited time period. BidEx is provided as Web App and Android App.
+				I was responsible for building the web app prototype with Angular.js and Sass.
+			</p>
+
+			<div class="githubLink">
+				<a href="https://github.com/alecrobins/BidEx" target="_blank">
+					View Source Code
+				</a>
+			</div>
+
+			<div class="clear">
+			</div>
+
+			<div class="projectTech">
+				<h2>Technologies</h2>
+
+				<div class="projectIcons" id="html5" ng-include="'Content/icons/icons/html5/html5-plain-wordmark.svg'"></div>
+				<div class="projectIcons" id="css3" ng-include="'Content/icons/icons/css3/css3-plain-wordmark.svg'"></div>
+				<div class="projectIcons" id="wordpress" ng-include="'Content/icons/icons/angularjs/angularjs-plain.svg'"></div>
+				<div class="projectIcons" id="wordpress" ng-include="'Content/icons/icons/sass/sass-original.svg'"></div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
