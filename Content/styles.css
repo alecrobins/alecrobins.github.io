@@ -87,7 +87,7 @@ h1, h2, h3 {
   border-radius: 0px 10px 10px 0px;
   -moz-border-radius: 0px 10px 10px 0px;
   -webkit-border-radius: 0px 10px 10px 0px;
-  border: 0px solid black;
+  border: 0px solid #000000;
   overflow: hidden;
   padding: 15px 15px 15px 100px;
   opacity: 0;
@@ -250,12 +250,12 @@ h1, h2, h3 {
   transition: all 0.2s ease; }
 
 .projectLink a {
-  background-image: url("http://www.alecrobins.me/Images/bg-link.png");
+  background-image: url("http://www.alecrobins.com/Images/bg-link.png");
   background-size: 15px;
   margin-right: 10px; }
 
 .githubLink a {
-  background-image: url("http://www.alecrobins.me/Images/bg-github.png");
+  background-image: url("http://www.alecrobins.com/Images/bg-github.png");
   background-size: 20px;
   background-color: #0a0a0a; }
 
@@ -302,11 +302,11 @@ h1, h2, h3 {
 .devicon-amazonwebservices-plain-wordmark.colored,
 .devicon-amazonwebservices-original.colored,
 .devicon-amazonwebservices-plain.colored {
-  color: #f7a80d; }
+  color: #F7A80D; }
 
 .devicon-android-plain-wordmark.colored,
 .devicon-android-plain.colored {
-  color: #a4c439; }
+  color: #A4C439; }
 
 .devicon-angularjs-plain-wordmark.colored,
 .devicon-angularjs-plain.colored {
@@ -315,21 +315,21 @@ h1, h2, h3 {
 .devicon-appcelerator-plain-wordmark.colored,
 .devicon-appcelerator-original.colored,
 .devicon-appcelerator-plain.colored {
-  color: #ac162c; }
+  color: #AC162C; }
 
 .devicon-apple-original.colored,
 .devicon-apple-plain.colored {
-  color: black; }
+  color: #000000; }
 
 .devicon-atom-original.colored,
 .devicon-atom-original-wordmark.colored,
 .devicon-atom-plain.colored,
 .devicon-atom-plain-wordmark.colored {
-  color: #67595d; }
+  color: #67595D; }
 
 .devicon-backbonejs-plain.colored,
 .devicon-backbonejs-plain-wordmark.colored {
-  color: #002a41; }
+  color: #002A41; }
 
 .devicon-bootstrap-plain-wordmark.colored,
 .devicon-bootstrap-plain.colored {
@@ -355,7 +355,7 @@ h1, h2, h3 {
 
 .devicon-debian-plain-wordmark.colored,
 .devicon-debian-plain.colored {
-  color: #a80030; }
+  color: #A80030; }
 
 .devicon-dot-net-plain-wordmark.colored,
 .devicon-dot-net-plain.colored {
@@ -363,11 +363,11 @@ h1, h2, h3 {
 
 .devicon-drupal-plain-wordmark.colored,
 .devicon-drupal-plain.colored {
-  color: #0073ba; }
+  color: #0073BA; }
 
 .devicon-firefox-plain-wordmark.colored,
 .devicon-firefox-plain.colored {
-  color: #dd732a; }
+  color: #DD732A; }
 
 .devicon-foundation-plain-wordmark.colored,
 .devicon-foundation-plain.colored {
@@ -393,7 +393,7 @@ h1, h2, h3 {
 
 .devicon-ie10-original.colored,
 .devicon-ie10-plain.colored {
-  color: #1ebbee; }
+  color: #1EBBEE; }
 
 .devicon-illustrator-line.colored,
 .devicon-illustrator-plain.colored {
@@ -401,7 +401,7 @@ h1, h2, h3 {
 
 .devicon-java-plain-wordmark.colored,
 .devicon-java-plain.colored {
-  color: #ea2d2e; }
+  color: #EA2D2E; }
 
 .devicon-javascript-plain.colored {
   color: #f0db4f; }
@@ -412,7 +412,7 @@ h1, h2, h3 {
 
 .devicon-krakenjs-plain.colored,
 .devicon-krakenjs-plain-wordmark.colored {
-  color: #0081c2; }
+  color: #0081C2; }
 
 .devicon-laravel-plain-wordmark.colored,
 .devicon-laravel-plain.colored {
@@ -422,15 +422,15 @@ h1, h2, h3 {
   color: #2a4d80; }
 
 .devicon-linux-plain.colored {
-  color: black; }
+  color: #000000; }
 
 .devicon-mongodb-plain.colored,
 .devicon-mongodb-plain-wordmark.colored {
-  color: #4faa41; }
+  color: #4FAA41; }
 
 .devicon-moodle-plain.colored,
 .devicon-moodle-plain-wordmark.colored {
-  color: #f7931e; }
+  color: #F7931E; }
 
 .devicon-mysql-plain.colored,
 .devicon-mysql-plain-wordmark.colored {
@@ -438,12 +438,12 @@ h1, h2, h3 {
 
 .devicon-nodejs-plain.colored,
 .devicon-nodejs-plain-wordmark.colored {
-  color: #83cd29; }
+  color: #83CD29; }
 
 .devicon-oracle-original.colored,
 .devicon-oracle-plain.colored,
 .devicon-oracle-plain-wordmark.colored {
-  color: #ea1b22; }
+  color: #EA1B22; }
 
 .devicon-photoshop-line.colored,
 .devicon-photoshop-plain.colored {
@@ -470,7 +470,7 @@ h1, h2, h3 {
 
 .devicon-ubuntu-plain-wordmark.colored,
 .devicon-ubuntu-plain.colored {
-  color: #dd4814; }
+  color: #DD4814; }
 
 .devicon-sass-original.colored,
 .devicon-sass-plain.colored,
@@ -479,21 +479,21 @@ h1, h2, h3 {
 
 .devicon-travis-plain-wordmark.colored,
 .devicon-travis-plain.colored {
-  color: #bb2031; }
+  color: #BB2031; }
 
 .devicon-trello-plain-wordmark.colored,
 .devicon-trello-plain.colored {
-  color: #23719f; }
+  color: #23719F; }
 
 .devicon-ubuntu-plain-wordmark.colored,
 .devicon-ubuntu-plain.colored {
-  color: #dd4814; }
+  color: #DD4814; }
 
 .devicon-windows8-original-wordmark.colored,
 .devicon-windows8-original.colored,
 .devicon-windows8-plain-wordmark.colored,
 .devicon-windows8-plain.colored {
-  color: #00adef; }
+  color: #00ADEF; }
 
 .devicon-wordpress-plain-wordmark.colored,
 .devicon-wordpress-plain.colored {
@@ -532,7 +532,6 @@ h1, h2, h3 {
     display: block !important;
     height: 100% !important;
     overflow: scroll !important; } }
-
 #containerLeft {
   display: table;
   height: 100vh;
@@ -593,10 +592,10 @@ h1, h2, h3 {
   width: 100%;
   overflow: scroll;
   background-color: #c8c8c8;
-  @-moz-document url-prefix() {
-    height: 100%; }
-
   /*hide if in mobile mode */ }
+@-moz-document url-prefix() {
+  #projectsContainerOut {
+    height: 100%; } }
   @media (max-width: 992px) {
     #projectsContainerOut {
       display: block;
@@ -702,43 +701,43 @@ h1, h2, h3 {
         font-size: 16px; } }
 
 .trendingSounds {
-  background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-trending.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Freelance-Bg/bg-trending.jpg"); }
 
 .mattRobinson {
-  background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-robinson.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Freelance-Bg/bg-robinson.jpg"); }
 
 .nsg {
-  background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-nsg.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Freelance-Bg/bg-nsg.jpg"); }
 
 .bzar {
-  background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-bzar.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Freelance-Bg/bg-bzar.jpg"); }
 
 .michaelPollack {
-  background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-pollack.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Freelance-Bg/bg-pollack.jpg"); }
 
 .starCity {
-  background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-starcity.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Freelance-Bg/bg-starcity.jpg"); }
 
 .lyfebank {
-  background-image: url("http://www.alecrobins.me/Images/Freelance-Bg/bg-lyfebank.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Freelance-Bg/bg-lyfebank.jpg"); }
 
 .urlShortner {
-  background-image: url("http://www.alecrobins.me/Images/Project-Bg/urlShortner.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Project-Bg/urlShortner.jpg"); }
 
 .bst {
-  background-image: url("http://www.alecrobins.me/Images/Project-Bg/bst.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Project-Bg/bst.jpg"); }
 
 .movieJournal {
-  background-image: url("http://www.alecrobins.me/Images/Project-Bg/movieJournal.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Project-Bg/movieJournal.jpg"); }
 
 .personalSite {
-  background-image: url("http://www.alecrobins.me/Images/Project-Bg/personalSite.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Project-Bg/personalSite.jpg"); }
 
 .safeAuto {
-  background-image: url("http://www.alecrobins.me/Images/Project-Bg/safeAuto.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Project-Bg/safeAuto.jpg"); }
 
 .bidEx {
-  background-image: url("http://www.alecrobins.me/Images/Project-Bg/bidEx.jpg"); }
+  background-image: url("http://www.alecrobins.com/Images/Project-Bg/bidEx.jpg"); }
 
 .rightAnimate {
   left: 0;
@@ -887,7 +886,7 @@ body {
   color: white; }
 
 body {
-  background: url("http://www.alecrobins.me//Images/bg.jpg") no-repeat center top fixed;
+  background: url("http://www.alecrobins.com//Images/bg.jpg") no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1167,3 +1166,5 @@ body {
   -ms-transform: translate3d(0, -100%, 0);
   -o-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0); }
+
+/*# sourceMappingURL=styles.css.map */

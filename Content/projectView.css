@@ -56,12 +56,12 @@
   transition: all 0.2s ease; }
 
 .projectLink a {
-  background-image: url("http://www.alecrobins.me/Images/bg-link.png");
+  background-image: url("http://www.alecrobins.com/Images/bg-link.png");
   background-size: 15px;
   margin-right: 10px; }
 
 .githubLink a {
-  background-image: url("http://www.alecrobins.me/Images/bg-github.png");
+  background-image: url("http://www.alecrobins.com/Images/bg-github.png");
   background-size: 20px;
   background-color: #0a0a0a; }
 
